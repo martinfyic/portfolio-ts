@@ -21,6 +21,10 @@ const NAV_ITEMS: NavItem[] = [
     page: 'about',
   },
   {
+    label: 'Certificates',
+    page: 'certificates',
+  },
+  {
     label: 'Projects',
     page: 'projects',
   },
@@ -48,9 +52,11 @@ export const Navbar = () => {
       <div className="justify-between md:flex md:items-center">
         <div>
           <div className="flex items-center justify-between py-3">
-            <div className="md:py-5 md:block">
-              <h2 className=" text-2xl font-bold">Martin Ferreira</h2>
-            </div>
+            <Link to="home" className="cursor-pointer">
+              <div className="md:py-5 md:block">
+                <h2 className=" text-2xl font-bold">Martin Ferreira</h2>
+              </div>
+            </Link>
             <div className="md:hidden">
               <button onClick={handleNavbarButton}>
                 {navbar ? <IoMdClose size={30} /> : <IoMdMenu size={30} />}
@@ -71,7 +77,7 @@ export const Navbar = () => {
                     key={label}
                     to={page}
                     className={
-                      'block lg:inline-block text-neutral-900  hover:text-neutral-500 dark:text-neutral-100'
+                      'block lg:inline-block text-neutral-900  hover:text-neutral-500 dark:text-neutral-100 cursor-pointer'
                     }
                     activeClass="active"
                     spy={true}
@@ -96,7 +102,7 @@ export const Navbar = () => {
                   onClick={handleDarkTheme}
                   className="bg-slate-100 p-2 rounded-xl"
                 >
-                  <RiMoonFill size={25} />
+                  <RiMoonFill size={25} color="black" />
                 </button>
               )}
             </div>
