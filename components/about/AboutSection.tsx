@@ -1,4 +1,4 @@
-import { BiografiSection, SkillSections } from './';
+import { BiografiSection, SkillSection } from './';
 
 export const AboutSection = () => {
   return (
@@ -10,7 +10,7 @@ export const AboutSection = () => {
         </h2>
         <div className="flex flex-col space-y-10 items-stretch justify-center align-top md:flex-row md:text-left md:p-4 md:space-y-0 md:space-x-10">
           <BiografiSection />
-          <SkillSections />
+          <SkillSection />
         </div>
       </div>
     </section>
