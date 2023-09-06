@@ -13,20 +13,20 @@ interface NavItem {
 
 const NAV_ITEMS: NavItem[] = [
   {
-    label: 'Home',
+    label: 'Inicio',
     page: 'home',
   },
   {
-    label: 'About',
+    label: 'Sobre Mi',
     page: 'about',
   },
   {
-    label: 'Certificates',
-    page: 'certificates',
+    label: 'Proyectos',
+    page: 'projects',
   },
   {
-    label: 'Projects',
-    page: 'projects',
+    label: 'Certificados',
+    page: 'certificates',
   },
 ];
 
