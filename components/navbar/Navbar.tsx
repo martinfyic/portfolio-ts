@@ -76,10 +76,12 @@ export const Navbar = () => {
                   <Link
                     key={label}
                     to={page}
-                    className={
-                      'block lg:inline-block text-neutral-900  hover:text-neutral-500 dark:text-neutral-100 cursor-pointer'
-                    }
+                    className="block lg:inline-block text-neutral-900 font-semibold  hover:text-orange-300 dark:text-neutral-100 dark:hover:text-orange-300 cursor-pointer"
                     activeClass="active"
+                    activeStyle={{
+                      color: '#fd8900',
+                      textDecoration: 'underline',
+                    }}
                     spy={true}
                     smooth={true}
                     offset={-100}
