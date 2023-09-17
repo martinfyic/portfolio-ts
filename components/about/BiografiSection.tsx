@@ -1,6 +1,6 @@
 export const BiografiSection = () => {
   return (
-    <div className="md:w-1/2">
+    <div className="md:w-1/2" data-aos="fade-up" data-aos-duration="2000">
       <h2 className="text-center text-2xl font-bold mb-6 md:text-left">
         Conóceme!
       </h2>

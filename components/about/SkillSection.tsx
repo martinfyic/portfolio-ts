@@ -17,22 +17,22 @@ const skills = [
 
 export const SkillSection = () => {
   return (
-    <div className="md:w-1/2">
+    <div className="md:w-1/2" data-aos="fade-up" data-aos-duration="2000">
       <h2 className="text-center text-2xl font-bold mb-6 md:text-left">
         Mis Skills
       </h2>
-      <div className="flex flex-wrap flex-row justify-center z-10 md:justify-start md:pb-7">
+      <ul className="flex flex-wrap flex-row justify-center z-10 md:justify-start md:pb-7">
         {skills.map((item, idx) => {
           return (
-            <p
+            <li
               key={idx}
               className="bg-gray-200 px-4 py-2 mr-2 mt-2 text-gray-500 rounded font-semibold"
             >
               {item.skill}
-            </p>
+            </li>
           );
         })}
-      </div>
+      </ul>
       <Image
         src="/skills-image.svg"
         alt="Imagen representativa de Martin"

@@ -8,7 +8,7 @@ import { HeroDetail } from './HeroDetail';
 export const HeroSection: FC = () => {
   return (
     <section id="home">
-      <div className="flex flex-col text-center items-center justify-center my-10 py-16 md:flex-row md:space-x-4 md:text-left md:py-40 md:my-32">
+      <div className="flex flex-col text-center items-center justify-center my-10 py-16 md:flex-row md:space-x-4 md:text-left md:py-28 md:my-24">
         <HeroImage />
         <HeroDetail />
       </div>
@@ -22,7 +22,10 @@ export const HeroSection: FC = () => {
           duration={500}
           className="cursor-pointer"
         >
-          <HiArrowDown size={35} className="animate-bounce" />
+          <HiArrowDown
+            size={35}
+            className="animate__animated animate__bounce animate__infinite"
+          />
         </Link>
       </div>
     </section>
