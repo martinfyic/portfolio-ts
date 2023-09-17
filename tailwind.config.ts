@@ -17,16 +17,6 @@ const config: Config = {
       colors: {
         primary: '#fd8900',
       },
-      animation: {
-        bounce:
-          'bounce 0.5s alternate cubic-bezier(0.95, 0.05, 0.795, 0.035) infinite',
-      },
-      keyframes: {
-        bounce: {
-          from: { transform: 'translateY(10px)' },
-          to: { transform: 'translateY(0px)' },
-        },
-      },
     },
   },
 
