@@ -4,7 +4,7 @@ import profilPic from '../../public/personal-foto.png';
 
 export const HeroImage: FC = () => {
   return (
-    <div className="md:w-1/2 md:mt-2 animate__animated animate__fadeIn">
+    <div className="md:w-1/2 md:mt-2 animate__animated animate__fadeIn animate__slow">
       <Image
         src={profilPic}
         alt="Foto de Martin Ferreira"
