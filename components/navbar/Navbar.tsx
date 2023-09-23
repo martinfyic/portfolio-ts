@@ -60,7 +60,7 @@ export const Navbar = () => {
               offset={-100}
               duration={500}
             >
-              <div className="md:py-5 md:block">
+              <div className="md:py-3 md:block">
                 <h2 className=" text-2xl font-bold">Martin Ferreira</h2>
               </div>
             </Link>
