@@ -1,4 +1,9 @@
 {
-  "quote-props": "preserve",
-  "singleQuote": true
+	"bracketSpacing": true,
+	"quote-props": "preserve",
+	"semi": true,
+	"singleQuote": true,
+	"tabWidth": 2,
+	"useTabs": true,
+	"arrowParens": "avoid"
 }
