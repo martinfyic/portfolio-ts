@@ -35,6 +35,7 @@ export const SkillSection = () => {
       </ul>
       <Image
         src="/skills-image.svg"
+        priority
         alt="Imagen representativa de Martin"
         width={350}
         height={350}
