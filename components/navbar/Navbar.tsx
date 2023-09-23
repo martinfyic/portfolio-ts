@@ -54,15 +54,13 @@ export const Navbar = () => {
 					<div className="flex items-center justify-between py-3">
 						<Link
 							to="home"
-							className="cursor-pointer"
+							className="cursor-pointer text-2xl font-bold md:py-3 md:block"
 							spy={true}
 							smooth={true}
 							offset={-100}
 							duration={500}
 						>
-							<div className="md:py-3 md:block">
-								<h2 className=" text-2xl font-bold">Martin Ferreira</h2>
-							</div>
+							Martin Ferreira
 						</Link>
 						<div className="md:hidden">
 							<button onClick={handleNavbarButton}>
