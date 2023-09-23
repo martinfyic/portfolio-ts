@@ -15,18 +15,18 @@ import { Inter } from 'next/font/google';
 const inter = Inter({ subsets: ['latin'] });
 
 export default function RootLayout({ children }: { children: ReactNode }) {
-  useEffect(() => {
-    AOS.init();
-  }, []);
+	useEffect(() => {
+		AOS.init();
+	}, []);
 
-  return (
-    <html lang="es" suppressHydrationWarning>
-      <body className={inter.className}>
-        <Providers>
-          <Navbar />
-          {children}
-        </Providers>
-      </body>
-    </html>
-  );
+	return (
+		<html lang="es" suppressHydrationWarning>
+			<body className={inter.className}>
+				<Providers>
+					<Navbar />
+					{children}
+				</Providers>
+			</body>
+		</html>
+	);
 }
