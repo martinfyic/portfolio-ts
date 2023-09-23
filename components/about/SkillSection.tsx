@@ -26,7 +26,7 @@ export const SkillSection = () => {
 					return (
 						<li
 							key={idx}
-							className="bg-gray-200 px-4 py-2 mr-2 mt-2 text-gray-500 rounded font-semibold"
+							className="bg-primary px-4 py-2 mr-2 mt-2 text-orange-100 rounded font-semibold"
 						>
 							{item.skill}
 						</li>
@@ -39,7 +39,7 @@ export const SkillSection = () => {
 				alt="Imagen representativa de Martin"
 				width={350}
 				height={350}
-				className="hidden md:block md:relative md:bottom-0 md:left-24 md:z-0"
+				className="hidden md:h-auto md:block md:relative md:bottom-0 md:left-24 md:z-0"
 			/>
 		</div>
 	);
