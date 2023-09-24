@@ -6,12 +6,12 @@ export const HeroImage: FC = () => {
 	return (
 		<div className="md:w-1/2 md:mt-2 animate__animated animate__fadeIn animate__slow">
 			<Image
-				src={ProfilPic}
 				alt="Foto de Martin Ferreira"
+				src={ProfilPic}
 				priority
 				sizes="100vw"
 				style={{
-					width: 400,
+					width: 600,
 					height: 'auto',
 				}}
 			/>
