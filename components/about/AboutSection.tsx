@@ -5,7 +5,7 @@ export const AboutSection = () => {
 		<section id="about">
 			<div className="my-12 pb-12 md:pt-16 md:pb-48">
 				<h2
-					className="text-center font-bold text-4xl my-20"
+					className="text-center font-bold text-6xl my-20"
 					data-aos="fade-up"
 					data-aos-duration="2000"
 				>
