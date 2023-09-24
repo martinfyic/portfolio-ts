@@ -3,7 +3,7 @@ import { Link } from 'react-scroll/modules';
 
 export const HeroDetail: FC = () => {
 	return (
-		<div className="md:mt-2 md:w-3/5 animate__animated animate__fadeIn animate__slow">
+		<div className="md:mt-2 md:w-3/5 animate__animated animate__fadeIn animate__slow md:text-left">
 			<h1 className="font-bold text-4xl mt-6 md:text-6xl md:mt-0">
 				Hola 👋🏻, soy Martín!
 			</h1>
@@ -14,7 +14,7 @@ export const HeroDetail: FC = () => {
 			</p>
 			<Link
 				to="proyectos"
-				className="text-neutral-100 font-semibold px-6 py-3 bg-primary cursor-pointer rounded shadow hover:bg-orange-500"
+				className="text-neutral-100 font-semibold px-6 py-3 bg-primary hover:bg-neutral-900 hover:text-primary cursor-pointer rounded shadow dark:hover:bg-orange-100 dark:hover:text-primary transition-all duration-500"
 				activeClass="active"
 				spy={true}
 				smooth={true}
