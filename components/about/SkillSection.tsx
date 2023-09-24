@@ -26,7 +26,7 @@ export const SkillSection = () => {
 					return (
 						<li
 							key={idx}
-							className="bg-primary px-4 py-2 mr-2 mt-2 text-orange-100 rounded font-semibold"
+							className="bg-primary text-lg px-4 py-2 mr-2 mt-2 text-orange-100 rounded font-semibold"
 						>
 							{item.skill}
 						</li>
