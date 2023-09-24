@@ -37,10 +37,12 @@ export const Navbar = () => {
 
 	const handleLightTheme = () => {
 		setTheme('light');
+		handleNavbarButton();
 	};
 
 	const handleDarkTheme = () => {
 		setTheme('dark');
+		handleNavbarButton();
 	};
 
 	const handleNavbarButton = () => {
@@ -63,7 +65,7 @@ export const Navbar = () => {
 							Martin Ferreira
 						</Link>
 						<div className="md:hidden">
-							<button onClick={handleNavbarButton}>
+							<button onClick={handleNavbarButton} aria-label="menu button">
 								{navbar ? <IoMdClose size={30} /> : <IoMdMenu size={30} />}
 							</button>
 						</div>
@@ -101,6 +103,7 @@ export const Navbar = () => {
 								<button
 									onClick={handleLightTheme}
 									className="bg-slate-100 p-2 rounded-xl"
+									aria-label="Light buttom theme"
 								>
 									<RiSunLine size={25} color="black" />
 								</button>
@@ -108,6 +111,7 @@ export const Navbar = () => {
 								<button
 									onClick={handleDarkTheme}
 									className="bg-slate-100 p-2 rounded-xl"
+									aria-label="Dark buttom theme"
 								>
 									<RiMoonFill size={25} color="black" />
 								</button>
