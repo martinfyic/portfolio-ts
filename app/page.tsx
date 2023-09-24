@@ -2,7 +2,7 @@ import type { Metadata } from 'next';
 import { AboutSection, HeroSection } from '@/components';
 
 export const metadata: Metadata = {
-	title: 'Martin Ferreira',
+	title: 'Martin Ferreira | Full Stack Dev',
 	description:
 		'Portfolio de Martin Ferreira Yic, Desarrollador Web Full Stack, stack MERN, Next.js, CSS, HTML',
 	keywords:
@@ -16,7 +16,7 @@ export const metadata: Metadata = {
 	icons: [
 		{
 			rel: 'icon',
-			url: 'data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>👋</text></svg>',
+			url: 'data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>👨🏻‍💻</text></svg>',
 		},
 	],
 };
