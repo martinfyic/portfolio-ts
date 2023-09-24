@@ -13,7 +13,7 @@ export const HeroDetail: FC = () => {
 				Montevideo, UY.
 			</p>
 			<Link
-				to="proyectos"
+				to="projects"
 				className="text-neutral-100 font-semibold px-6 py-3 bg-primary hover:bg-neutral-900 hover:text-primary cursor-pointer rounded shadow dark:hover:bg-orange-100 dark:hover:text-primary transition-all duration-500"
 				activeClass="active"
 				spy={true}
