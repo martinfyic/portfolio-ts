@@ -20,12 +20,6 @@ export const BiografiSection = () => {
 			</p>
 			<br />
 			<p>
-				Soy altamente ambicioso, auto motivado y enfocado en mis objetivos. Creo
-				firmemente en que el aprendizaje nunca termina y estoy comprometido a
-				expandir mis conocimientos y habilidades en el campo de la tecnología.
-			</p>
-			<br />
-			<p>
 				Cuando no estoy escribiendo código, encontrarás una amplia variedad de
 				pasatiempos y pasiones que ocupan mi tiempo. Me encanta sumergirme en la
 				lectura, mantenerme activo con deportes, explorar nuevos lugares a
@@ -34,7 +28,6 @@ export const BiografiSection = () => {
 			</p>
 			<br />
 			<p>
-				Mi trayectoria está llena de desafíos emocionantes y metas por alcanzar.
 				Estoy emocionado por lo que el futuro me depara y estoy dispuesto a
 				seguir aprendiendo y creciendo, siempre abierto a nuevas oportunidades y
 				experiencias en el apasionante mundo de la tecnología.
