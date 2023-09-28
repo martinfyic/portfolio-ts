@@ -6,7 +6,7 @@ import { proyects } from './';
 
 export const ProyectSection = () => {
 	return (
-		<section id="projects" className="mb-12">
+		<section id="projects" className="my-12 pb-12 md:pt-6 md:pb-48">
 			<h2
 				className="text-center font-bold text-6xl my-20"
 				data-aos="fade-up"
