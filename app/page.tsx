@@ -1,5 +1,10 @@
 import type { Metadata } from 'next';
-import { AboutSection, HeroSection, ProyectSection } from '@/components';
+import {
+	AboutSection,
+	HeroSection,
+	ProyectSection,
+	StudiesSection,
+} from '@/components';
 
 export const metadata: Metadata = {
 	title: 'Martin Ferreira | Full Stack Dev',
@@ -27,6 +32,7 @@ export default function Home() {
 			<HeroSection />
 			<AboutSection />
 			<ProyectSection />
+			<StudiesSection />
 		</main>
 	);
 }
