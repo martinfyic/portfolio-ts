@@ -8,7 +8,7 @@ export const ProyectSection = () => {
 	return (
 		<section id="projects" className="my-12 pb-12 md:pt-6 md:pb-48">
 			<h2
-				className="text-center font-bold text-6xl my-20"
+				className="text-center font-bold text-4xl md:text-6xl my-20"
 				data-aos="fade-up"
 				data-aos-duration="800"
 			>
@@ -41,7 +41,9 @@ export const ProyectSection = () => {
 									</NextLink>
 								</picture>
 								<div className="md:w-1/2">
-									<h3 className="text-3xl font-semibold mb-6">{proy.name}</h3>
+									<h3 className="text-2xl md:text-3xl font-semibold mb-6">
+										{proy.name}
+									</h3>
 									<p className="text-lg leading-7 mb-4">{proy.description}</p>
 									<div className="flex flex-row align-bottom space-x-4">
 										<NextLink href={proy.github} target="_blank">
