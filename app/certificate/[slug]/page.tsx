@@ -45,6 +45,7 @@ const CertificatePage = async ({ params }: { params: { slug: string } }) => {
 		linkCurso,
 		name,
 		place,
+		url,
 	} = await getCertificateInfo(params.slug);
 
 	return (
@@ -61,6 +62,15 @@ const CertificatePage = async ({ params }: { params: { slug: string } }) => {
 			<div className="flex flex-col md:flex-row justify-start items-start md:justify-around font-semibold md:items-center gap-3 my-3 text-gray-700 dark:text-slate-400">
 				<p>Fecha inicio: {dateStart}</p>
 				<p>Fecha fin: {dateFinished}</p>
+				<div className="flex flex-row items-center gap-1">
+					<p>Url certificado</p>
+					<NextLink href={url} target="_blank">
+						<BsArrowUpRightSquare
+							size={20}
+							className="hover:-translate-y-1 transition-transform cursor-pointer"
+						/>
+					</NextLink>
+				</div>
 				<div className="flex flex-row items-center gap-1">
 					<p>Realizado en: {place} </p>
 					<NextLink href={linkCurso} target="_blank">
