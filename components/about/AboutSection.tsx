@@ -3,7 +3,7 @@ import { BiografiSection, SkillSection } from './';
 export const AboutSection = () => {
 	return (
 		<section id="about">
-			<div className="my-12 pb-12 md:pt-6 md:pb-48">
+			<div className="my-12 pb-12 md:pt-6 md:pb-24">
 				<h2
 					className="text-center font-bold text-4xl md:text-6xl mt-6 mb-12"
 					data-aos="fade-up"
