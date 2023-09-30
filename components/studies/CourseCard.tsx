@@ -8,7 +8,11 @@ interface CourseCardProps {
 
 export const CourseCard: React.FC<CourseCardProps> = ({ course }) => {
 	return (
-		<div className="rounded-lg overflow-hidden m-4 w-80">
+		<div
+			className="rounded-lg overflow-hidden m-4 w-80"
+			data-aos="fade-up"
+			data-aos-duration="1500"
+		>
 			<Image src={course.image} alt={course.name} width={300} height={300} />
 			<div className="p-4">
 				<h3 className="text-xl font-semibold">{course.name}</h3>
