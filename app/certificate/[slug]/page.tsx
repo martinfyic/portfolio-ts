@@ -54,7 +54,13 @@ const CertificatePage = async ({ params }: { params: { slug: string } }) => {
 				{name}
 			</h1>
 			<picture className="flex justify-center items-center mb-10">
-				<Image src={image} alt={name} width={600} height={600} />
+				<Image
+					src={image}
+					alt={name}
+					width={600}
+					height={600}
+					data-aos="zoom-in"
+				/>
 			</picture>
 			<h2 className="text-left md:text-center font-bold text-2xl md:text-3xl mb-3">
 				Resumen

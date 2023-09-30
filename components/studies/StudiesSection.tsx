@@ -23,6 +23,8 @@ export const StudiesSection = () => {
 			</div>
 			<div className="flex justify-center items-center mt-16">
 				<NextLink
+					data-aos="fade-up"
+					data-aos-duration="1500"
 					href="/certificate"
 					className="text-neutral-100 font-semibold px-6 py-3 bg-primary hover:bg-neutral-900 hover:text-primary cursor-pointer rounded shadow dark:hover:bg-orange-100 dark:hover:text-primary transition-all duration-500 flex flex-row gap-2 items-center justify-center"
 				>
