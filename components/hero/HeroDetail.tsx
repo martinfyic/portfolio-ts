@@ -1,4 +1,5 @@
 import { FC } from 'react';
+
 import { Link } from 'react-scroll/modules';
 
 export const HeroDetail: FC = () => {
