@@ -2,6 +2,7 @@ import type { Metadata } from 'next';
 import {
 	AboutSection,
 	HeroSection,
+	HomeNavbar,
 	ProyectSection,
 	StudiesSection,
 } from '@/components';
@@ -29,6 +30,7 @@ export const metadata: Metadata = {
 export default function Home() {
 	return (
 		<main className="mx-auto max-w-3xl px-4 sm:px-6 md:max-w-5xl">
+			<HomeNavbar />
 			<HeroSection />
 			<AboutSection />
 			<ProyectSection />
