@@ -6,6 +6,8 @@ import { CourseCard } from './CourseCard';
 import { certificate } from './certificate';
 
 export const StudiesSection = () => {
+	const firstFiveCertificate = certificate.slice(0, 5);
+
 	return (
 		<section id="certificates" className="my-8 pb-12 md:pt-6 md:pb-24">
 			<h2
@@ -17,7 +19,7 @@ export const StudiesSection = () => {
 				<hr className="w-6 h-1 mx-auto my-4 bg-primary border-0 rounded" />
 			</h2>
 			<div className="flex flex-wrap justify-around items-center">
-				{certificate.map(course => (
+				{firstFiveCertificate.map(course => (
 					<CourseCard key={course.slug} course={course} />
 				))}
 			</div>
