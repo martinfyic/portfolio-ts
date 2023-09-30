@@ -67,4 +67,17 @@ export const certificate: ICertificate[] = [
 		place: 'Coderhouse',
 		type: 'course',
 	},
+	{
+		name: 'Node: De cero a experto ',
+		slug: 'node-de-cero-a-experto',
+		url: 'https://udemy-certificate.s3.amazonaws.com/image/UC-546b7726-61e1-404f-bc19-f5823e8ee0f9.jpg',
+		image: '/studies/node-de-cero-a-experto.webp',
+		description:
+			'En este curso, he adquirido habilidades fundamentales para programación web con Node.js y MongoDB, incluyendo seguridad con JWT, control de versiones con Git, desarrollo front-end con TypeScript y la creación de API REST y WebSockets. Ahora, me siento preparado para crear aplicaciones web de calidad, gestionar bases de datos y colaborar en proyectos con confianza. ',
+		dateStart: 'null',
+		dateFinished: '03/05/2023',
+		linkCurso: 'https://www.udemy.com/course/node-de-cero-a-experto/',
+		place: 'Udemy',
+		type: 'course',
+	},
 ];

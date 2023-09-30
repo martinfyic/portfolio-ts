@@ -4,7 +4,7 @@ export interface ICertificate {
 	url: string;
 	image: string;
 	description: string;
-	dateStart: string;
+	dateStart?: string;
 	dateFinished: string;
 	linkCurso: string;
 	place: string;
