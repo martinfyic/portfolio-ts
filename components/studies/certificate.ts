@@ -2,7 +2,8 @@ import { ICertificate } from '@/interfaces';
 
 export const certificate: ICertificate[] = [
 	{
-		name: 'Full Stack',
+		name: 'Carrera de Desarrollo Full Stack',
+		slug: 'carrera-de-desarroll-full-stack',
 		url: 'https://www.coderhouse.com.uy/certificados/644187e006739a0002c80906',
 		image: '/studies/full-stack-mern.webp',
 		description:
@@ -16,6 +17,7 @@ export const certificate: ICertificate[] = [
 	},
 	{
 		name: 'Desarrollo Web',
+		slug: 'desarrollo-web',
 		url: 'https://www.coderhouse.com.uy/certificados/62ad49d8c0a2c200254cddfa',
 		image: '/studies/desarrollo-web.webp',
 		description:
@@ -28,6 +30,7 @@ export const certificate: ICertificate[] = [
 	},
 	{
 		name: 'JavaScript',
+		slug: 'javascript',
 		url: 'https://www.coderhouse.com.uy/certificados/62e825d976e3140019639730',
 		image: '/studies/javascript.webp',
 		description:
@@ -40,6 +43,7 @@ export const certificate: ICertificate[] = [
 	},
 	{
 		name: 'React Js',
+		slug: 'react-js',
 		url: 'https://www.coderhouse.com.uy/certificados/634a86914c14de000e7e0a90',
 		image: '/studies/reactjs.webp',
 		description:
@@ -52,6 +56,7 @@ export const certificate: ICertificate[] = [
 	},
 	{
 		name: 'Programación Backend',
+		slug: 'programacion-backend',
 		url: 'https://www.coderhouse.com/certificados/644187e006739a0002c80904',
 		image: '/studies/programacion-backend.webp',
 		description:
