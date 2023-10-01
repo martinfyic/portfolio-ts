@@ -5,7 +5,7 @@ import { ReactNode, useEffect } from 'react';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 
-import { Footer, Navbar } from '@/components';
+import { Footer } from '@/components';
 import { Providers } from './providers';
 import 'animate.css';
 import '../styles/globals.css';
@@ -23,7 +23,6 @@ export default function RootLayout({ children }: { children: ReactNode }) {
 		<html lang="es" suppressHydrationWarning>
 			<body className={inter.className}>
 				<Providers>
-					<Navbar />
 					{children}
 					<Footer />
 				</Providers>

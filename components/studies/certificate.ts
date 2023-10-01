@@ -2,7 +2,8 @@ import { ICertificate } from '@/interfaces';
 
 export const certificate: ICertificate[] = [
 	{
-		name: 'Full Stack',
+		name: 'Carrera de Desarrollo Full Stack',
+		slug: 'carrera-de-desarroll-full-stack',
 		url: 'https://www.coderhouse.com.uy/certificados/644187e006739a0002c80906',
 		image: '/studies/full-stack-mern.webp',
 		description:
@@ -16,6 +17,7 @@ export const certificate: ICertificate[] = [
 	},
 	{
 		name: 'Desarrollo Web',
+		slug: 'desarrollo-web',
 		url: 'https://www.coderhouse.com.uy/certificados/62ad49d8c0a2c200254cddfa',
 		image: '/studies/desarrollo-web.webp',
 		description:
@@ -28,6 +30,7 @@ export const certificate: ICertificate[] = [
 	},
 	{
 		name: 'JavaScript',
+		slug: 'javascript',
 		url: 'https://www.coderhouse.com.uy/certificados/62e825d976e3140019639730',
 		image: '/studies/javascript.webp',
 		description:
@@ -40,6 +43,7 @@ export const certificate: ICertificate[] = [
 	},
 	{
 		name: 'React Js',
+		slug: 'react-js',
 		url: 'https://www.coderhouse.com.uy/certificados/634a86914c14de000e7e0a90',
 		image: '/studies/reactjs.webp',
 		description:
@@ -52,6 +56,7 @@ export const certificate: ICertificate[] = [
 	},
 	{
 		name: 'Programación Backend',
+		slug: 'programacion-backend',
 		url: 'https://www.coderhouse.com/certificados/644187e006739a0002c80904',
 		image: '/studies/programacion-backend.webp',
 		description:
@@ -60,6 +65,19 @@ export const certificate: ICertificate[] = [
 		dateFinished: '27/03/2023',
 		linkCurso: 'https://www.coderhouse.com.uy/online/programacion-backend',
 		place: 'Coderhouse',
+		type: 'course',
+	},
+	{
+		name: 'Node: De cero a experto ',
+		slug: 'node-de-cero-a-experto',
+		url: 'https://udemy-certificate.s3.amazonaws.com/image/UC-546b7726-61e1-404f-bc19-f5823e8ee0f9.jpg',
+		image: '/studies/node-de-cero-a-experto.webp',
+		description:
+			'En este curso, he adquirido habilidades fundamentales para programación web con Node.js y MongoDB, incluyendo seguridad con JWT, control de versiones con Git, desarrollo front-end con TypeScript y la creación de API REST y WebSockets. Ahora, me siento preparado para crear aplicaciones web de calidad, gestionar bases de datos y colaborar en proyectos con confianza. ',
+		dateStart: 'null',
+		dateFinished: '03/05/2023',
+		linkCurso: 'https://www.udemy.com/course/node-de-cero-a-experto/',
+		place: 'Udemy',
 		type: 'course',
 	},
 ];
