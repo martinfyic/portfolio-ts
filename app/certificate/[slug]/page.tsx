@@ -37,16 +37,8 @@ export const generateMetadata = async ({
 };
 
 const CertificatePage = async ({ params }: { params: { slug: string } }) => {
-	const {
-		dateFinished,
-		dateStart,
-		description,
-		image,
-		linkCurso,
-		name,
-		place,
-		url,
-	} = await getCertificateInfo(params.slug);
+	const { dateFinished, description, image, linkCurso, name, place, url } =
+		await getCertificateInfo(params.slug);
 
 	return (
 		<main className="mx-auto mt-32 max-w-3xl px-4 sm:px-6 md:max-w-5xl">
@@ -66,8 +58,7 @@ const CertificatePage = async ({ params }: { params: { slug: string } }) => {
 				Resumen
 			</h2>
 			<div className="flex flex-col md:flex-row justify-start items-start md:justify-around font-semibold md:items-center gap-3 my-3 text-gray-700 dark:text-slate-400">
-				<p>Fecha inicio: {dateStart}</p>
-				<p>Fecha fin: {dateFinished}</p>
+				<p>Fecha obtención: {dateFinished}</p>
 				<div className="flex flex-row items-center gap-1">
 					<p>Url certificado</p>
 					<NextLink href={url} target="_blank">

@@ -10,7 +10,7 @@ interface CourseCardProps {
 }
 
 export const CourseCard: React.FC<CourseCardProps> = ({ course }) => {
-	const { dateFinished, dateStart, image, name, place, slug } = course;
+	const { dateFinished, image, name, place, slug } = course;
 
 	return (
 		<div
@@ -24,16 +24,13 @@ export const CourseCard: React.FC<CourseCardProps> = ({ course }) => {
 			<div className="p-4">
 				<h3 className="mb-1 text-xl font-semibold">{name}</h3>
 				<p className="text-gray-700 text-sm dark:text-slate-400">
-					Fecha de inicio: {dateStart}
-				</p>
-				<p className="text-gray-700 text-sm dark:text-slate-400">
-					Fecha de fin: {dateFinished}
+					Fecha obtención: {dateFinished}
 				</p>
 				<p className="text-gray-700 text-sm dark:text-slate-400">
 					Lugar: {place}
 				</p>
 				<div className="mt-3">
-					<NextLink href={`certificate/${slug}`}>
+					<NextLink href={`/certificate/${slug}`}>
 						<BsArrowUpRightSquare
 							size={30}
 							className="hover:-translate-y-1 transition-transform cursor-pointer"
