@@ -1,5 +1,6 @@
 import Image from 'next/image';
 import NextLink from 'next/link';
+import { redirect } from 'next/navigation';
 
 import { BsArrowUpRightSquare } from 'react-icons/bs';
 
@@ -8,9 +9,11 @@ import { getCertificateInfo, getPaths } from '@/helpers';
 export async function generateStaticParams() {
 	const paths = await getPaths();
 
-	return paths.map(path => ({
-		slug: path,
-	}));
+	return paths.map(path => {
+		return {
+			slug: path,
+		};
+	});
 }
 
 export const generateMetadata = async ({
@@ -18,9 +21,13 @@ export const generateMetadata = async ({
 }: {
 	params: { slug: string };
 }) => {
-	const { name } = await getCertificateInfo(params.slug);
+	const certificate = await getCertificateInfo(params.slug);
+	if (!certificate) {
+		redirect('/');
+	}
+
 	return {
-		title: `Certificado ${name} | Martin Ferreira`,
+		title: `Certificado ${certificate.name} | Martin Ferreira`,
 		authors: [
 			{
 				name: 'Martin Ferreira Yic',
@@ -37,8 +44,12 @@ export const generateMetadata = async ({
 };
 
 const CertificatePage = async ({ params }: { params: { slug: string } }) => {
+	const data = await getCertificateInfo(params.slug);
+	if (!data) {
+		redirect('/');
+	}
 	const { dateFinished, description, image, linkCurso, name, place, url } =
-		await getCertificateInfo(params.slug);
+		data;
 
 	return (
 		<main className="mx-auto mt-32 max-w-3xl px-4 sm:px-6 md:max-w-5xl">
