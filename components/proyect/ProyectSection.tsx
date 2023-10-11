@@ -44,7 +44,9 @@ export const ProyectSection = () => {
 									<h3 className="text-2xl md:text-3xl font-semibold mb-6">
 										{proy.name}
 									</h3>
-									<p className="text-lg leading-7 mb-4">{proy.description}</p>
+									<p className="sm:text-base md:text-lg leading-7 mb-4 truncate-3-lines">
+										{proy.description}
+									</p>
 									<div className="flex flex-row align-bottom space-x-4">
 										<NextLink href={proy.github} target="_blank">
 											<BsGithub

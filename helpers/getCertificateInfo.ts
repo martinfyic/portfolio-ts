@@ -1,4 +1,4 @@
-import { certificate } from '@/components';
+import { certificate } from '@/data';
 import { ICertificate } from '@/interfaces';
 
 export const getCertificateInfo = async (

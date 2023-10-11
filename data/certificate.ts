@@ -2,7 +2,7 @@ import { ICertificate } from '@/interfaces';
 
 export const certificate: ICertificate[] = [
 	{
-		name: 'Carrera de Desarrollo Full Stack',
+		name: 'Desarrollo Full Stack',
 		slug: 'carrera-de-desarroll-full-stack',
 		url: 'https://www.coderhouse.com.uy/certificados/644187e006739a0002c80906',
 		image: '/studies/full-stack-mern.webp',
@@ -14,19 +14,6 @@ export const certificate: ICertificate[] = [
 			'https://www.coderhouse.com.uy/online/carrera-online-desarrollo-fullstack',
 		place: 'Coderhouse',
 		type: 'career',
-	},
-	{
-		name: 'Desarrollo Web',
-		slug: 'desarrollo-web',
-		url: 'https://www.coderhouse.com.uy/certificados/62ad49d8c0a2c200254cddfa',
-		image: '/studies/desarrollo-web.webp',
-		description:
-			'En este curso, aprendí a convertir prototipos en papel en sitios web utilizando HTML y CSS, incorporando las mejores prácticas del desarrollo web. Además, adquirí experiencia en herramientas de optimización web, como GIT para el control de versiones y SASS como preprocesador. También dominé el uso de Bootstrap y Tailwind para el diseño. No dejé de lado la importancia del SEO en mis proyectos.',
-		dateStart: '14/03/2022',
-		dateFinished: '11/05/2022',
-		linkCurso: 'https://www.coderhouse.com.uy/online/desarrollo-web-online',
-		place: 'Coderhouse',
-		type: 'course',
 	},
 	{
 		name: 'JavaScript',
@@ -78,6 +65,19 @@ export const certificate: ICertificate[] = [
 		dateFinished: '03/05/2023',
 		linkCurso: 'https://www.udemy.com/course/node-de-cero-a-experto/',
 		place: 'Udemy',
+		type: 'course',
+	},
+	{
+		name: 'Desarrollo Web',
+		slug: 'desarrollo-web',
+		url: 'https://www.coderhouse.com.uy/certificados/62ad49d8c0a2c200254cddfa',
+		image: '/studies/desarrollo-web.webp',
+		description:
+			'En este curso, aprendí a convertir prototipos en papel en sitios web utilizando HTML y CSS, incorporando las mejores prácticas del desarrollo web. Además, adquirí experiencia en herramientas de optimización web, como GIT para el control de versiones y SASS como preprocesador. También dominé el uso de Bootstrap y Tailwind para el diseño. No dejé de lado la importancia del SEO en mis proyectos.',
+		dateStart: '14/03/2022',
+		dateFinished: '11/05/2022',
+		linkCurso: 'https://www.coderhouse.com.uy/online/desarrollo-web-online',
+		place: 'Coderhouse',
 		type: 'course',
 	},
 ];
