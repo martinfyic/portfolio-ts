@@ -67,6 +67,7 @@ const CertificatePage = async ({ params }: { params: { slug: string } }) => {
 			</picture>
 			<h2 className="text-left md:text-center font-bold text-2xl md:text-3xl mb-3">
 				Resumen
+				<hr className="w-20 h-1 mx-auto my-4 bg-primary border-0 rounded" />
 			</h2>
 			<div className="flex flex-col md:flex-row justify-start items-start md:justify-around font-semibold md:items-center gap-3 my-3 text-gray-700 dark:text-slate-400">
 				<p>Fecha obtención: {dateFinished}</p>
