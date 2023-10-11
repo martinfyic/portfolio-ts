@@ -14,7 +14,7 @@ export const CourseCard: React.FC<CourseCardProps> = ({ course }) => {
 
 	return (
 		<div
-			className="rounded-lg overflow-hidden m-4 w-80"
+			className="rounded-lg overflow-hidden m-4 w-36 md:w-80"
 			data-aos="fade-up"
 			data-aos-duration="1500"
 		>
@@ -22,8 +22,8 @@ export const CourseCard: React.FC<CourseCardProps> = ({ course }) => {
 				<Image src={image} alt={name} width={300} height={300} />
 			</NextLink>
 			<div className="p-4">
-				<h3 className="mb-1 text-xl font-semibold">{name}</h3>
-				<p className="text-gray-700 text-sm dark:text-slate-400">
+				<h3 className="mb-1 text-sm md:text-xl font-semibold">{name}</h3>
+				<p className="text-gray-700 text-xs md:text-sm dark:text-slate-400">
 					Fecha obtención: {dateFinished}
 				</p>
 				<p className="text-gray-700 text-sm dark:text-slate-400">
