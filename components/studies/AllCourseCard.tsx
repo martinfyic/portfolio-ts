@@ -23,6 +23,11 @@ export const AllCourseCard: FC<CourseCardProps> = ({ course }) => {
 				priority
 				data-aos="zoom-in"
 			/>
+
+			<h2 className="text-sm text-center font-semibold md:text-lg p-2 my-3">
+				{name}
+				<hr className="w-20 h-1 mx-auto my-4 bg-primary border-0 rounded" />
+			</h2>
 			<div className="flex justify-center items-center mt-3">
 				<NextLink href={`/certificate/${slug}`}>
 					<BsArrowUpRightSquare
