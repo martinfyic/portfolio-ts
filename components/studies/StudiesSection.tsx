@@ -3,10 +3,10 @@ import NextLink from 'next/link';
 import { BsArrowUpRightSquare } from 'react-icons/bs';
 
 import { CourseCard } from './CourseCard';
-import { certificate } from './certificate';
+import { certificate } from '@/data';
 
 export const StudiesSection = () => {
-	const firstFiveCertificate = certificate.slice(0, 5);
+	const firstFiveCertificate = certificate.slice(0, 4);
 
 	return (
 		<section id="certificates" className="my-8 pb-12 md:pt-6 md:pb-24">
@@ -18,7 +18,7 @@ export const StudiesSection = () => {
 				Certificados 🎓
 				<hr className="w-6 h-1 mx-auto my-4 bg-primary border-0 rounded" />
 			</h2>
-			<div className="flex flex-wrap justify-around items-center mb-6">
+			<div className="grid grid-cols-2 md:grid-cols-2 gap-4 place-items-center place-content-center">
 				{firstFiveCertificate.map(course => (
 					<CourseCard key={course.slug} course={course} />
 				))}
