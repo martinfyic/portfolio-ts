@@ -1,4 +1,5 @@
-import { AllCourseCard, certificate } from '@/components';
+import { AllCourseCard } from '@/components';
+import { certificate } from '@/data';
 
 export const generateMetadata = async () => {
 	return {
