@@ -29,6 +29,10 @@ const NAV_ITEMS: NavItem[] = [
 		label: 'Certificados',
 		page: '/certificate',
 	},
+	{
+		label: 'Contáctame',
+		page: '/contact',
+	},
 ];
 
 export const PageNavbar = () => {
