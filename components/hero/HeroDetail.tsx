@@ -12,7 +12,7 @@ export const HeroDetail: FC = () => {
 				Desarrollador <span className="text-primary">Full Stack</span> en
 				Montevideo, UY.
 			</p>
-			<div className="flex justify-start items-center gap-3">
+			<div className="flex justify-center md:justify-start items-center gap-3">
 				<Link
 					to="projects"
 					className="text-white font-semibold px-6 py-3 bg-primary rounded shadow hover:-translate-y-1 transition-transform cursor-pointer hover:opacity-70"
