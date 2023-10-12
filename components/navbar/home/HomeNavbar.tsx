@@ -28,6 +28,10 @@ const NAV_ITEMS: NavItem[] = [
 		label: 'Certificados',
 		page: 'certificates',
 	},
+	{
+		label: 'Contáctame',
+		page: 'contact',
+	},
 ];
 
 export const HomeNavbar = () => {

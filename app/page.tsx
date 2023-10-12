@@ -1,6 +1,7 @@
 import type { Metadata } from 'next';
 import {
 	AboutSection,
+	ContactSection,
 	HeroSection,
 	HomeNavbar,
 	ProyectSection,
@@ -48,6 +49,7 @@ export default function Home() {
 			<AboutSection />
 			<ProyectSection />
 			<StudiesSection />
+			<ContactSection />
 		</main>
 	);
 }

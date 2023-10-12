@@ -9,6 +9,7 @@ import { Footer } from '@/components';
 import { Providers } from './providers';
 import 'animate.css';
 import '../styles/globals.css';
+import 'react-toastify/dist/ReactToastify.css';
 
 import { Inter } from 'next/font/google';
 

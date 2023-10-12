@@ -1,3 +1,4 @@
+export * from './contact';
 export * from './params';
 export * from './proyect';
 export * from './skills';

@@ -14,6 +14,7 @@
 		"lint": "next lint"
 	},
 	"dependencies": {
+		"@react-email/components": "0.0.7",
 		"@types/node": "20.6.4",
 		"@types/react": "18.2.22",
 		"@types/react-dom": "18.2.7",
@@ -21,16 +22,24 @@
 		"aos": "3.0.0-beta.6",
 		"eslint": "8.50.0",
 		"eslint-config-next": "13.5.2",
-		"next": "^13.5.2",
+		"formik": "2.4.5",
+		"next": "13.5.2",
 		"next-themes": "0.2.1",
+		"nodemailer": "6.9.6",
+		"nodemailer-smtp-transport": "2.7.4",
 		"react": "18.2.0",
 		"react-dom": "18.2.0",
 		"react-icons": "4.11.0",
 		"react-scroll": "1.8.9",
-		"sharp": "0.32.6"
+		"react-toastify": "9.1.3",
+		"sharp": "0.32.6",
+		"zod": "3.22.4",
+		"zod-formik-adapter": "1.2.0"
 	},
 	"devDependencies": {
 		"@types/aos": "3.0.5",
+		"@types/nodemailer": "6.4.11",
+		"@types/nodemailer-smtp-transport": "2.7.6",
 		"@types/react-scroll": "1.8.7",
 		"autoprefixer": "10.4.16",
 		"postcss": "8.4.30",
