@@ -21,9 +21,6 @@ export const generateMetadata = async () => {
 const ProjectPage = () => {
 	return (
 		<section className="h-screen">
-			{/* <h1 className="text-center text-4xl md:text-6xl mb-11">Contáctame ✉️</h1>
-			<p className="text-8xl text-center  mb-11">🏗️</p>
-			<p className="text-2xl text-center">👷🏻 En construcción ⚒️</p> */}
 			<ContactSection />
 		</section>
 	);
