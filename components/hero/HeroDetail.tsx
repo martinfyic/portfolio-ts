@@ -33,7 +33,7 @@ export const HeroDetail: FC = () => {
 					offset={-100}
 					duration={500}
 				>
-					Contáctame
+					Contacto
 				</Link>
 			</div>
 		</div>
