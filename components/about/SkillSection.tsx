@@ -46,7 +46,8 @@ export const SkillSection = () => {
 					return (
 						<li
 							key={idx}
-							className="bg-primary flex justify-center items-center gap-2 text-lg px-4 py-2 mr-2 mt-2 text-orange-100 rounded font-semibold"
+							// className="bg-primary flex justify-center items-center gap-2 text-lg px-4 py-2 mr-2 mt-2 text-orange-100 rounded font-semibold"
+							className="bg-primary flex justify-center items-center gap-2 text-sm md:text-lg px-2 md:px-4 py-2 mr-2 mt-2 text-orange-100 rounded font-semibold"
 						>
 							{icon}
 

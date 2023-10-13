@@ -30,7 +30,7 @@ const NAV_ITEMS: NavItem[] = [
 		page: '/certificate',
 	},
 	{
-		label: 'Contáctame',
+		label: 'Contacto',
 		page: '/contact',
 	},
 ];

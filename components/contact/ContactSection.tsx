@@ -7,7 +7,7 @@ export const ContactSection = () => {
 			<div className="container px-5 py-24 lg:my-24 mx-auto">
 				<div className="flex flex-col text-center w-full mb-12">
 					<h2 className="text-center font-bold text-4xl md:text-6xl mt-6 mb-12">
-						Contáctame ✉️
+						Contacto ✉️
 						<hr className="w-6 h-1 mx-auto my-4 bg-primary border-0 rounded" />
 					</h2>
 					<p className="lg:w-2/3 mx-auto leading-relaxed text-base">
