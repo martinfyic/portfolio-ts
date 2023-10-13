@@ -32,8 +32,6 @@ export const ContactForm = () => {
 			});
 
 			resetForm();
-
-			console.log('Email sent successfully!');
 		} catch (error) {
 			console.error('Failed to send email:', error);
 		} finally {
@@ -85,7 +83,7 @@ export const ContactForm = () => {
 									<ErrorMessage
 										name="email"
 										component="div"
-										className="text-red-500"
+										className="text-red-500 text-sm"
 									/>
 								</div>
 							</div>
@@ -103,7 +101,7 @@ export const ContactForm = () => {
 									<ErrorMessage
 										name="message"
 										component="div"
-										className="text-red-500"
+										className="text-red-500 text-sm"
 									/>
 								</div>
 							</div>
