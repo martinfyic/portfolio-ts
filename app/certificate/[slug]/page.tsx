@@ -48,8 +48,17 @@ const CertificatePage = async ({ params }: { params: { slug: string } }) => {
 	if (!data) {
 		redirect('/');
 	}
-	const { dateFinished, description, image, linkCurso, name, place, url } =
-		data;
+	const {
+		courseHours,
+		courseWeeks,
+		dateFinished,
+		description,
+		image,
+		linkCurso,
+		name,
+		place,
+		url,
+	} = data;
 
 	return (
 		<main className="mx-auto mt-32 max-w-3xl px-4 sm:px-6 md:max-w-5xl">
@@ -71,6 +80,8 @@ const CertificatePage = async ({ params }: { params: { slug: string } }) => {
 			</h2>
 			<div className="flex flex-col md:flex-row justify-start items-start md:justify-around font-semibold md:items-center gap-3 my-3 text-gray-700 dark:text-slate-400">
 				<p>Fecha obtención: {dateFinished}</p>
+				<p>Semanas: {courseWeeks}</p>
+				<p>Horas curso: {courseHours}</p>
 				<div className="flex flex-row items-center gap-1">
 					<p>Url certificado</p>
 					<NextLink href={url} target="_blank">

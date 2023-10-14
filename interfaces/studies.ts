@@ -1,12 +1,14 @@
 export interface ICertificate {
-	name: string;
-	slug: string;
-	url: string;
-	image: string;
-	description: string;
-	dateStart?: string;
 	dateFinished: string;
+	dateStart?: string;
+	description: string;
+	image: string;
 	linkCurso: string;
+	courseHours: number;
+	courseWeeks: number;
+	name: string;
 	place: string;
+	slug: string;
 	type: 'course' | 'career';
+	url: string;
 }
