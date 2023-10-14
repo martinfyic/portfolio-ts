@@ -4,4 +4,5 @@ export interface IProyect {
 	image: string;
 	github: string;
 	link: string;
+	slug: string;
 }
