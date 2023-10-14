@@ -65,7 +65,7 @@ const CertificatePage = async ({ params }: { params: { slug: string } }) => {
 					data-aos="zoom-in"
 				/>
 			</picture>
-			<h2 className="text-left md:text-center font-bold text-2xl md:text-3xl mb-3">
+			<h2 className="text-center font-bold text-2xl md:text-3xl mb-3">
 				Resumen
 				<hr className="w-20 h-1 mx-auto my-4 bg-primary border-0 rounded" />
 			</h2>
