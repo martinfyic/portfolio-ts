@@ -5,9 +5,10 @@ import { redirect } from 'next/navigation';
 import { BsArrowUpRightSquare } from 'react-icons/bs';
 
 import { getCertificateInfo, getPaths } from '@/helpers';
+import { certificate } from '@/data';
 
 export async function generateStaticParams() {
-	const paths = await getPaths();
+	const paths = await getPaths({ prop: certificate });
 
 	return paths.map(path => {
 		return {
