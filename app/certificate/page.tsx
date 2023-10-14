@@ -4,6 +4,7 @@ import { certificate } from '@/data';
 export const generateMetadata = async () => {
 	return {
 		title: `Todos mis Cursos | Martin Ferreira`,
+		description: 'Portfolio de Martin Ferreira Yic, Todos los certificados',
 		authors: [
 			{
 				name: 'Martin Ferreira Yic',
