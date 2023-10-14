@@ -8,6 +8,7 @@ export const proyects: IProyect[] = [
 		image: '/web-images/ecommer-nodejs-proyect.webp',
 		github: 'https://github.com/martinfyic/proyecto-nodejs-ecommerce.git',
 		link: 'https://proyecto-nodejs-ecommerce.onrender.com/',
+		slug: 'backend-ecommers-nodeJs',
 	},
 	{
 		name: 'H.D.P Burguer',
@@ -16,6 +17,7 @@ export const proyects: IProyect[] = [
 		image: '/web-images/burguer-react-proyect.webp',
 		github: 'https://github.com/martinfyic/app-hamburguesas-reactjs.git',
 		link: 'https://proyecto-reactjs-martin.netlify.app/',
+		slug: 'hdp-burguer',
 	},
 	{
 		name: 'Zara Proyect ',
@@ -24,5 +26,6 @@ export const proyects: IProyect[] = [
 		image: '/web-images/zara-js-proyect.webp',
 		github: 'https://github.com/martinfyic/simulador-ecommerce-jsvanilla.git',
 		link: 'https://simulador-ecommerce-js.netlify.app/',
+		slug: 'zara-proyect-js-vanilla',
 	},
 ];
