@@ -1,10 +1,10 @@
-export const generateMetadata = async ({
-	params,
-}: {
-	params: { slug: string };
-}) => {
+import { proyects } from '@/data';
+import { AllProyectsDetail } from '@/components';
+
+export const generateMetadata = async () => {
 	return {
 		title: 'Todos mis Proyectos | Martin Ferreira',
+		description: 'Portfolio de Martin Ferreira Yic, Todos los proyectos',
 		authors: [
 			{
 				name: 'Martin Ferreira Yic',
@@ -22,10 +22,16 @@ export const generateMetadata = async ({
 
 const ProjectPage = () => {
 	return (
-		<section className="h-screen">
-			<h1 className="text-center text-4xl md:text-6xl mb-11">Proyectos</h1>
-			<p className="text-8xl text-center  mb-11">🏗️</p>
-			<p className="text-2xl text-center">👷🏻 En construcción ⚒️</p>
+		<section className="mx-auto max-w-3xl md:max-w-5xl">
+			<h1 className="text-center font-bold text-4xl md:text-6xl mb-12">
+				Todos mis Proyectos
+			</h1>
+			<div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
+				{proyects.map(proyect => {
+					if (!proyect.slug) return;
+					return <AllProyectsDetail key={proyect.slug} proyect={proyect} />;
+				})}
+			</div>
 		</section>
 	);
 };

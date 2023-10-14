@@ -2,13 +2,13 @@ import Image from 'next/image';
 import NextLink from 'next/link';
 import { redirect } from 'next/navigation';
 
-import { BsArrowUpRightSquare } from 'react-icons/bs';
+import { BsArrowUpRightSquare, BsGithub } from 'react-icons/bs';
 
-import { getCertificateInfo, getPaths } from '@/helpers';
-import { certificate } from '@/data';
+import { getProyectInfo, getPaths } from '@/helpers';
+import { proyects } from '@/data';
 
 export async function generateStaticParams() {
-	const paths = await getPaths({ prop: certificate });
+	const paths = await getPaths({ prop: proyects });
 
 	return paths.map(path => {
 		return {
@@ -22,13 +22,13 @@ export const generateMetadata = async ({
 }: {
 	params: { slug: string };
 }) => {
-	const certificate = await getCertificateInfo(params.slug);
-	if (!certificate) {
+	const proyect = await getProyectInfo(params.slug);
+	if (!proyect) {
 		redirect('/');
 	}
 
 	return {
-		title: `Certificado ${certificate.name} | Martin Ferreira`,
+		title: `Proyecto ${proyect.name} | Martin Ferreira`,
 		authors: [
 			{
 				name: 'Martin Ferreira Yic',
@@ -44,22 +44,12 @@ export const generateMetadata = async ({
 	};
 };
 
-const CertificatePage = async ({ params }: { params: { slug: string } }) => {
-	const data = await getCertificateInfo(params.slug);
+const ProyectPage = async ({ params }: { params: { slug: string } }) => {
+	const data = await getProyectInfo(params.slug);
 	if (!data) {
 		redirect('/');
 	}
-	const {
-		courseHours,
-		courseWeeks,
-		dateFinished,
-		description,
-		image,
-		linkCurso,
-		name,
-		place,
-		url,
-	} = data;
+	const { description, image, name, github, link } = data;
 
 	return (
 		<main className="mx-auto mt-32 max-w-3xl px-4 sm:px-6 md:max-w-5xl">
@@ -80,21 +70,18 @@ const CertificatePage = async ({ params }: { params: { slug: string } }) => {
 				<hr className="w-20 h-1 mx-auto my-4 bg-primary border-0 rounded" />
 			</h2>
 			<div className="flex flex-col md:flex-row justify-start items-start md:justify-around font-semibold md:items-center gap-3 my-3 text-gray-700 dark:text-slate-400">
-				<p>Fecha obtención: {dateFinished}</p>
-				<p>Semanas: {courseWeeks}</p>
-				<p>Horas curso: {courseHours}</p>
-				<div className="flex flex-row items-center gap-1">
-					<p>Url certificado</p>
-					<NextLink href={url} target="_blank">
-						<BsArrowUpRightSquare
+				<div className="flex flex-row items-center gap-2">
+					<p>Github </p>
+					<NextLink href={github} target="_blank">
+						<BsGithub
 							size={20}
 							className="hover:-translate-y-1 transition-transform cursor-pointer"
 						/>
 					</NextLink>
 				</div>
-				<div className="flex flex-row items-center gap-1">
-					<p>Realizado en: {place} </p>
-					<NextLink href={linkCurso} target="_blank">
+				<div className="flex flex-row items-center gap-2">
+					<p>Site </p>
+					<NextLink href={link} target="_blank">
 						<BsArrowUpRightSquare
 							size={20}
 							className="hover:-translate-y-1 transition-transform cursor-pointer"
@@ -107,4 +94,4 @@ const CertificatePage = async ({ params }: { params: { slug: string } }) => {
 	);
 };
 
-export default CertificatePage;
+export default ProyectPage;

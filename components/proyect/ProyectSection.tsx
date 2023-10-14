@@ -1,8 +1,9 @@
 import Image from 'next/image';
 import NextLink from 'next/link';
+
 import { BsGithub, BsArrowUpRightSquare } from 'react-icons/bs';
 
-import { proyects } from './';
+import { proyects } from '@/data';
 
 export const ProyectSection = () => {
 	return (

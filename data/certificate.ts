@@ -14,6 +14,8 @@ export const certificate: ICertificate[] = [
 			'https://www.coderhouse.com.uy/online/carrera-online-desarrollo-fullstack',
 		place: 'Coderhouse',
 		type: 'career',
+		courseHours: 200,
+		courseWeeks: 50,
 	},
 	{
 		name: 'JavaScript',
@@ -27,6 +29,8 @@ export const certificate: ICertificate[] = [
 		linkCurso: 'https://www.coderhouse.com.uy/online/javascript',
 		place: 'Coderhouse',
 		type: 'course',
+		courseHours: 34,
+		courseWeeks: 9,
 	},
 	{
 		name: 'React Js',
@@ -40,6 +44,8 @@ export const certificate: ICertificate[] = [
 		linkCurso: 'https://www.coderhouse.com.uy/online/reactjs',
 		place: 'Coderhouse',
 		type: 'course',
+		courseHours: 28,
+		courseWeeks: 7,
 	},
 	{
 		name: 'Programación Backend',
@@ -53,6 +59,8 @@ export const certificate: ICertificate[] = [
 		linkCurso: 'https://www.coderhouse.com.uy/online/programacion-backend',
 		place: 'Coderhouse',
 		type: 'course',
+		courseHours: 96,
+		courseWeeks: 24,
 	},
 	{
 		name: 'Node: De cero a experto ',
@@ -66,6 +74,8 @@ export const certificate: ICertificate[] = [
 		linkCurso: 'https://www.udemy.com/course/node-de-cero-a-experto/',
 		place: 'Udemy',
 		type: 'course',
+		courseHours: 29,
+		courseWeeks: 7,
 	},
 	{
 		name: 'Desarrollo Web',
@@ -79,5 +89,7 @@ export const certificate: ICertificate[] = [
 		linkCurso: 'https://www.coderhouse.com.uy/online/desarrollo-web-online',
 		place: 'Coderhouse',
 		type: 'course',
+		courseHours: 38,
+		courseWeeks: 10,
 	},
 ];
