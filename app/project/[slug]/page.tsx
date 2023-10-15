@@ -2,7 +2,8 @@ import Image from 'next/image';
 import NextLink from 'next/link';
 import { redirect } from 'next/navigation';
 
-import { BsArrowUpRightSquare, BsGithub } from 'react-icons/bs';
+import { BsGithub } from 'react-icons/bs';
+import { BiWorld } from 'react-icons/bi';
 
 import { getProyectInfo, getPaths } from '@/helpers';
 import { proyects } from '@/data';
@@ -82,7 +83,7 @@ const ProyectPage = async ({ params }: { params: { slug: string } }) => {
 				<div className="flex flex-row items-center gap-2">
 					<p>Site </p>
 					<NextLink href={link} target="_blank">
-						<BsArrowUpRightSquare
+						<BiWorld
 							size={20}
 							className="hover:-translate-y-1 transition-transform cursor-pointer"
 						/>

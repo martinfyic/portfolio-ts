@@ -2,6 +2,7 @@ import Image from 'next/image';
 import NextLink from 'next/link';
 
 import { BsGithub, BsArrowUpRightSquare } from 'react-icons/bs';
+import { BiWorld } from 'react-icons/bi';
 
 import { proyects } from '@/data';
 
@@ -48,6 +49,12 @@ export const ProyectSection = () => {
 										{proy.description}
 									</p>
 									<div className="flex flex-row align-bottom space-x-4">
+										<NextLink href={`/project/${proy.slug}`}>
+											<BsArrowUpRightSquare
+												size={30}
+												className="hover:-translate-y-1 transition-transform cursor-pointer"
+											/>
+										</NextLink>
 										<NextLink href={proy.github} target="_blank">
 											<BsGithub
 												size={30}
@@ -55,7 +62,7 @@ export const ProyectSection = () => {
 											/>
 										</NextLink>
 										<NextLink href={proy.link} target="_blank">
-											<BsArrowUpRightSquare
+											<BiWorld
 												size={30}
 												className="hover:-translate-y-1 transition-transform cursor-pointer"
 											/>
@@ -66,6 +73,15 @@ export const ProyectSection = () => {
 						</div>
 					);
 				})}
+			</div>
+			<div className="flex justify-center items-center mt-10 pt-10">
+				<NextLink
+					href="/project"
+					className="font-semibold px-6 py-3 border-black dark:border-white border-2 cursor-pointer rounded shadow flex flex-row gap-2 items-center justify-center hover:-translate-y-1 transition-transform"
+				>
+					Todos los proyectos
+					<BsArrowUpRightSquare size={20} />
+				</NextLink>
 			</div>
 		</section>
 	);
