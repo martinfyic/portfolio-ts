@@ -9,11 +9,7 @@ import { proyects } from '@/data';
 export const ProyectSection = () => {
 	return (
 		<section id="projects" className="my-12 pb-12 md:pt-3 md:pb-24">
-			<h2
-				className="text-center font-bold text-4xl md:text-6xl my-14"
-				data-aos="fade-up"
-				data-aos-duration="800"
-			>
+			<h2 className="text-center font-bold text-4xl md:text-6xl my-14">
 				Proyectos
 				<hr className="w-6 h-1 mx-auto my-4 bg-primary border-0 rounded" />
 			</h2>
@@ -21,11 +17,7 @@ export const ProyectSection = () => {
 				{proyects.map((proy, idx) => {
 					return (
 						<div key={idx}>
-							<div
-								className="flex flex-col md:flex-row md:space-x-12"
-								data-aos="fade-up"
-								data-aos-duration="1500"
-							>
+							<div className="flex flex-col md:flex-row md:space-x-12">
 								<picture className="md:w-1/2 mb-4">
 									<NextLink
 										href={`/project/${proy.slug}`}

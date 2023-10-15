@@ -37,7 +37,7 @@ const skills: ISkill[] = [
 
 export const SkillSection = () => {
 	return (
-		<div className="md:w-1/2" data-aos="fade-up" data-aos-duration="2000">
+		<div className="md:w-1/2">
 			<h2 className="text-center text-2xl font-bold mb-6 md:text-left">
 				Mis Skills
 			</h2>
