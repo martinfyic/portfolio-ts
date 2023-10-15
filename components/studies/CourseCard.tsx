@@ -13,11 +13,7 @@ export const CourseCard: React.FC<CourseCardProps> = ({ course }) => {
 	const { dateFinished, image, name, place, slug } = course;
 
 	return (
-		<div
-			className="rounded-lg overflow-hidden m-4 w-36 md:w-80"
-			data-aos="fade-up"
-			data-aos-duration="1500"
-		>
+		<div className="rounded-lg overflow-hidden m-4 w-36 md:w-80">
 			<NextLink href={`certificate/${slug}`}>
 				<Image src={image} alt={name} width={300} height={300} />
 			</NextLink>

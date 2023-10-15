@@ -2,7 +2,7 @@ import Image from 'next/image';
 import NextLink from 'next/link';
 import { redirect } from 'next/navigation';
 
-import { BsArrowUpRightSquare } from 'react-icons/bs';
+import { BiWorld } from 'react-icons/bi';
 
 import { getCertificateInfo, getPaths } from '@/helpers';
 import { certificate } from '@/data';
@@ -83,19 +83,19 @@ const CertificatePage = async ({ params }: { params: { slug: string } }) => {
 				<p>Fecha obtención: {dateFinished}</p>
 				<p>Semanas: {courseWeeks}</p>
 				<p>Horas curso: {courseHours}</p>
-				<div className="flex flex-row items-center gap-1">
+				<div className="flex flex-row items-center gap-2">
 					<p>Url certificado</p>
 					<NextLink href={url} target="_blank">
-						<BsArrowUpRightSquare
+						<BiWorld
 							size={20}
 							className="hover:-translate-y-1 transition-transform cursor-pointer"
 						/>
 					</NextLink>
 				</div>
-				<div className="flex flex-row items-center gap-1">
-					<p>Realizado en: {place} </p>
+				<div className="flex flex-row items-center gap-2">
+					<p>Realizado en {place} </p>
 					<NextLink href={linkCurso} target="_blank">
-						<BsArrowUpRightSquare
+						<BiWorld
 							size={20}
 							className="hover:-translate-y-1 transition-transform cursor-pointer"
 						/>

@@ -2,7 +2,8 @@ import Image from 'next/image';
 import NextLink from 'next/link';
 import { redirect } from 'next/navigation';
 
-import { BsArrowUpRightSquare, BsGithub } from 'react-icons/bs';
+import { BsGithub } from 'react-icons/bs';
+import { BiWorld } from 'react-icons/bi';
 
 import { getProyectInfo, getPaths } from '@/helpers';
 import { proyects } from '@/data';
@@ -69,7 +70,7 @@ const ProyectPage = async ({ params }: { params: { slug: string } }) => {
 				Resumen
 				<hr className="w-20 h-1 mx-auto my-4 bg-primary border-0 rounded" />
 			</h2>
-			<div className="flex flex-col md:flex-row justify-start items-start md:justify-around font-semibold md:items-center gap-3 my-3 text-gray-700 dark:text-slate-400">
+			<div className="flex flex-row justify-around items-center font-semibold gap-3 my-3 text-gray-700 dark:text-slate-400">
 				<div className="flex flex-row items-center gap-2">
 					<p>Github </p>
 					<NextLink href={github} target="_blank">
@@ -82,7 +83,7 @@ const ProyectPage = async ({ params }: { params: { slug: string } }) => {
 				<div className="flex flex-row items-center gap-2">
 					<p>Site </p>
 					<NextLink href={link} target="_blank">
-						<BsArrowUpRightSquare
+						<BiWorld
 							size={20}
 							className="hover:-translate-y-1 transition-transform cursor-pointer"
 						/>

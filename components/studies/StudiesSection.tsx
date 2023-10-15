@@ -10,11 +10,7 @@ export const StudiesSection = () => {
 
 	return (
 		<section id="certificates" className="my-8 pb-12 md:pt-6 md:pb-24">
-			<h2
-				className="text-center font-bold text-4xl md:text-6xl my-12"
-				data-aos="fade-up"
-				data-aos-duration="800"
-			>
+			<h2 className="text-center font-bold text-4xl md:text-6xl my-12">
 				Certificados 🎓
 				<hr className="w-6 h-1 mx-auto my-4 bg-primary border-0 rounded" />
 			</h2>
