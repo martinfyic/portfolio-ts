@@ -27,8 +27,7 @@ export const ProyectSection = () => {
 							>
 								<picture className="md:w-1/2 mb-4">
 									<NextLink
-										href={proy.link}
-										target="_blank"
+										href={`/project/${proy.slug}`}
 										className="cursor-pointer"
 									>
 										<Image
