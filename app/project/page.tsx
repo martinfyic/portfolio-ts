@@ -22,11 +22,11 @@ export const generateMetadata = async () => {
 
 const ProjectPage = () => {
 	return (
-		<section className="mx-auto max-w-3xl md:max-w-5xl">
+		<section className="mx-auto max-w-3xl md:max-w-5xl h-screen">
 			<h1 className="text-center font-bold text-4xl md:text-6xl mb-12">
 				Todos mis Proyectos
 			</h1>
-			<div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
+			<div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 place-content-center py-8">
 				{proyects.map(proyect => {
 					if (!proyect.slug) return;
 					return <AllProyectsDetail key={proyect.slug} proyect={proyect} />;
