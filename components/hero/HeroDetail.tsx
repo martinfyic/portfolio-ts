@@ -1,41 +1,30 @@
-import { FC } from 'react';
-
-import { Link } from 'react-scroll/modules';
+import { FC } from "react";
+import NextLink from "next/link";
 
 export const HeroDetail: FC = () => {
-	return (
-		<div className="md:mt-2 md:w-3/5 animate__animated animate__fadeIn animate__slow md:text-left">
-			<h1 className="font-bold text-4xl mt-6 md:text-6xl md:mt-0">
-				Hola 👋🏻, soy Martín!
-			</h1>
-			<p className="text-lg font-semibold mt-4 mb-6 md:text-2xl">
-				Desarrollador <span className="text-primary">Full Stack</span> en
-				Montevideo, UY.
-			</p>
-			<div className="flex justify-center md:justify-start items-center gap-3">
-				<Link
-					to="projects"
-					className="text-white font-semibold px-6 py-3 bg-primary rounded shadow hover:-translate-y-1 transition-transform cursor-pointer hover:opacity-70"
-					activeClass="active"
-					spy={true}
-					smooth={true}
-					offset={-100}
-					duration={500}
-				>
-					Proyectos
-				</Link>
-				<Link
-					to="contact"
-					className="font-semibold border-black dark:border-white border-2 px-6 py-3 rounded shadow hover:-translate-y-1 transition-transform cursor-pointer hover:opacity-70"
-					activeClass="active"
-					spy={true}
-					smooth={true}
-					offset={-100}
-					duration={500}
-				>
-					Contacto
-				</Link>
-			</div>
-		</div>
-	);
+  return (
+    <div className="md:mt-2 md:w-3/5 md:text-left">
+      <h1 className="mt-6 text-4xl font-bold md:mt-0 md:text-6xl">
+        Hola 👋🏻, soy Martín!
+      </h1>
+      <p className="mb-6 mt-4 text-lg font-semibold md:text-2xl">
+        Desarrollador <span className="text-primary">Full Stack</span> en
+        Montevideo, UY.
+      </p>
+      <div className="flex items-center justify-center gap-3 md:justify-start">
+        <NextLink
+          href="#projects"
+          className="cursor-pointer rounded bg-primary px-6 py-3 font-semibold text-white shadow transition-transform hover:-translate-y-1 hover:opacity-70"
+        >
+          Proyectos
+        </NextLink>
+        <NextLink
+          href="#contact"
+          className="cursor-pointer rounded border-2 border-black px-6 py-3 font-semibold shadow transition-transform hover:-translate-y-1 hover:opacity-70 dark:border-white"
+        >
+          Contacto
+        </NextLink>
+      </div>
+    </div>
+  );
 };

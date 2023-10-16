@@ -1,33 +1,33 @@
-import NextLink from 'next/link';
+import NextLink from "next/link";
 
-import { BsArrowUpRightSquare } from 'react-icons/bs';
+import { BsArrowUpRightSquare } from "react-icons/bs";
 
-import { CourseCard } from './CourseCard';
-import { certificate } from '@/data';
+import { CourseCard } from "./CourseCard";
+import { certificate } from "@/data";
 
 export const StudiesSection = () => {
-	const firstFiveCertificate = certificate.slice(0, 4);
+  const firstFiveCertificate = certificate.slice(0, 4);
 
-	return (
-		<section id="certificates" className="my-8 pb-12 md:pt-6 md:pb-24">
-			<h2 className="text-center font-bold text-4xl md:text-6xl my-12">
-				Certificados 🎓
-				<hr className="w-6 h-1 mx-auto my-4 bg-primary border-0 rounded" />
-			</h2>
-			<div className="grid grid-cols-2 md:grid-cols-2 gap-4 place-items-center place-content-center">
-				{firstFiveCertificate.map(course => (
-					<CourseCard key={course.slug} course={course} />
-				))}
-			</div>
-			<div className="flex justify-center items-center mt-10 pt-10">
-				<NextLink
-					href="/certificate"
-					className="font-semibold px-6 py-3 border-black dark:border-white border-2 cursor-pointer rounded shadow flex flex-row gap-2 items-center justify-center hover:-translate-y-1 transition-transform"
-				>
-					Todos los certificados
-					<BsArrowUpRightSquare size={20} />
-				</NextLink>
-			</div>
-		</section>
-	);
+  return (
+    <section id="certificates" className="my-8 py-16">
+      <h2 className="my-12 text-center text-4xl font-bold md:text-6xl">
+        Certificados 🎓
+        <hr className="mx-auto my-4 h-1 w-6 rounded border-0 bg-primary" />
+      </h2>
+      <div className="grid grid-cols-2 place-content-center place-items-center gap-4 md:grid-cols-2">
+        {firstFiveCertificate.map((course) => (
+          <CourseCard key={course.slug} course={course} />
+        ))}
+      </div>
+      <div className="mt-10 flex items-center justify-center pt-10">
+        <NextLink
+          href="/certificate"
+          className="flex cursor-pointer flex-row items-center justify-center gap-2 rounded border-2 border-black px-6 py-3 font-semibold shadow transition-transform hover:-translate-y-1 dark:border-white"
+        >
+          Todos los certificados
+          <BsArrowUpRightSquare size={20} />
+        </NextLink>
+      </div>
+    </section>
+  );
 };
