@@ -1,12 +1,11 @@
 "use client";
 
-import { useState } from "react";
-import { useTheme } from "next-themes";
 import NextLink from "next/link";
 import { usePathname } from "next/navigation";
 
 import { RiMoonFill, RiSunLine } from "react-icons/ri";
 import { IoMdMenu, IoMdClose } from "react-icons/io";
+import { useDarkMode } from "@/hooks";
 
 interface NavItem {
   label: string;
@@ -37,24 +36,15 @@ const NAV_ITEMS: NavItem[] = [
 ];
 
 export const PageNavbar = () => {
-  const { systemTheme, theme, setTheme } = useTheme();
-  const currentTheme = theme === "system" ? systemTheme : theme;
-  const [navbar, setNavbar] = useState(false);
   const path = usePathname();
 
-  const handleLightTheme = () => {
-    setTheme("light");
-    handleNavbarButton();
-  };
-
-  const handleDarkTheme = () => {
-    setTheme("dark");
-    handleNavbarButton();
-  };
-
-  const handleNavbarButton = () => {
-    setNavbar(!navbar);
-  };
+  const {
+    currentTheme,
+    handleDarkTheme,
+    handleLightTheme,
+    handleNavbarButton,
+    navbar,
+  } = useDarkMode();
 
   return (
     <header className="fixed top-0  z-50 mx-auto w-full bg-white px-4 shadow dark:border-b dark:border-stone-600 dark:bg-darker sm:px-20">
