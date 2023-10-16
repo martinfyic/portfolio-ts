@@ -55,7 +55,7 @@ export const PageNavbar = () => {
 	};
 
 	return (
-		<header className="w-full mx-auto  px-4 sm:px-20 fixed top-0 z-50 shadow bg-white dark:bg-stone-900 dark:border-b dark:border-stone-600">
+		<header className="w-full mx-auto  px-4 sm:px-20 fixed top-0 z-50 shadow bg-white dark:bg-black dark:border-b dark:border-stone-600">
 			<div className="justify-between md:flex md:items-center">
 				<div>
 					<div className="flex items-center justify-between py-3">
