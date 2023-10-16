@@ -6,7 +6,7 @@ import { HeroDetail } from './HeroDetail';
 export const HeroSection: FC = () => {
 	return (
 		<section id="home">
-			<div className="flex flex-col text-center items-center justify-center my-10 py-16 md:flex-row md:py-24 md:my-20">
+			<div className="flex flex-col text-center items-center justify-center my-10 py-16 md:flex-row md:py-24 md:my-20 lg:my-36">
 				<HeroImage />
 				<HeroDetail />
 			</div>
