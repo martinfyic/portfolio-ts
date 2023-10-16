@@ -4,7 +4,7 @@ import { Link } from 'react-scroll/modules';
 
 export const HeroDetail: FC = () => {
 	return (
-		<div className="md:mt-2 md:w-3/5 animate__animated animate__fadeIn animate__slow md:text-left">
+		<div className="md:mt-2 md:w-3/5 md:text-left">
 			<h1 className="font-bold text-4xl mt-6 md:text-6xl md:mt-0">
 				Hola 👋🏻, soy Martín!
 			</h1>
