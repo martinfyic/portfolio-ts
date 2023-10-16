@@ -1,5 +1,5 @@
 import { proyects } from '@/data';
-import { AllProyectsDetail } from '@/components';
+import { AllProjectsDetail } from '@/components';
 
 export const generateMetadata = async () => {
 	return {
@@ -22,14 +22,14 @@ export const generateMetadata = async () => {
 
 const ProjectPage = () => {
 	return (
-		<section className="mx-auto max-w-3xl md:max-w-5xl h-screen">
+		<section className="mx-auto max-w-3xl md:max-w-5xl">
 			<h1 className="text-center font-bold text-4xl md:text-6xl mb-12">
 				Todos mis Proyectos
 			</h1>
-			<div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 place-content-center py-8">
+			<div className="grid grid-cols-2 md:grid-cols-3 gap-4 place-content-center py-8">
 				{proyects.map(proyect => {
 					if (!proyect.slug) return;
-					return <AllProyectsDetail key={proyect.slug} proyect={proyect} />;
+					return <AllProjectsDetail key={proyect.slug} proyect={proyect} />;
 				})}
 			</div>
 		</section>

@@ -26,7 +26,7 @@ const CertificatePage = () => {
 			<h1 className="text-center font-bold text-4xl md:text-6xl mb-12">
 				Todos mis Certificados 🎓
 			</h1>
-			<div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
+			<div className="grid grid-cols-2 md:grid-cols-3 gap-4">
 				{certificate.map(course => {
 					if (!course.slug) return;
 					return <AllCourseCard key={course.slug} course={course} />;
