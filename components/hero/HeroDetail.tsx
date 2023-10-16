@@ -3,7 +3,7 @@ import NextLink from "next/link";
 
 export const HeroDetail: FC = () => {
   return (
-    <div className="md:mt-2 md:w-3/5 md:text-left">
+    <div className="animate__animated animate__fadeIn md:mt-2 md:w-3/5 md:text-left">
       <h1 className="mt-6 text-4xl font-bold md:mt-0 md:text-6xl">
         Hola 👋🏻, soy Martín!
       </h1>
