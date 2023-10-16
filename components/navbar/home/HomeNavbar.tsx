@@ -1,11 +1,13 @@
 "use client";
 
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import { useTheme } from "next-themes";
 import NextLink from "next/link";
 
 import { RiMoonFill, RiSunLine } from "react-icons/ri";
 import { IoMdMenu, IoMdClose } from "react-icons/io";
+
+import { useActivClass } from "@/hooks";
 
 interface NavItem {
   label: string;
@@ -36,34 +38,7 @@ export const HomeNavbar = () => {
   const currentTheme = theme === "system" ? systemTheme : theme;
   const [navbar, setNavbar] = useState(false);
 
-  // set activ class ------------------------------------------
-  const [activeSection, setActiveSection] = useState(null);
-
-  useEffect(() => {
-    const handleScroll = () => {
-      const sections = document.querySelectorAll("section");
-      let currentActive = null;
-
-      sections.forEach((section) => {
-        const sectionId = section.id;
-        const rect = section.getBoundingClientRect();
-
-        if (rect.top <= 100 && rect.bottom >= 100) {
-          currentActive = sectionId;
-        }
-      });
-
-      setActiveSection(currentActive);
-    };
-
-    window.addEventListener("scroll", handleScroll);
-    handleScroll();
-
-    return () => {
-      window.removeEventListener("scroll", handleScroll); // Limpia el oyente al desmontar el componente.
-    };
-  }, []);
-  // ---------------------------------------------------------------
+  const { activeSection } = useActivClass();
 
   const handleLightTheme = () => {
     setTheme("light");
