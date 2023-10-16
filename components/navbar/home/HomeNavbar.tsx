@@ -1,11 +1,11 @@
 "use client";
 
-import { useEffect, useState } from "react";
-import { useTheme } from "next-themes";
 import NextLink from "next/link";
 
 import { RiMoonFill, RiSunLine } from "react-icons/ri";
 import { IoMdMenu, IoMdClose } from "react-icons/io";
+
+import { useActivClass, useDarkMode } from "@/hooks";
 
 interface NavItem {
   label: string;
@@ -32,52 +32,15 @@ const NAV_ITEMS: NavItem[] = [
 ];
 
 export const HomeNavbar = () => {
-  const { systemTheme, theme, setTheme } = useTheme();
-  const currentTheme = theme === "system" ? systemTheme : theme;
-  const [navbar, setNavbar] = useState(false);
+  const {
+    currentTheme,
+    handleDarkTheme,
+    handleLightTheme,
+    handleNavbarButton,
+    navbar,
+  } = useDarkMode();
 
-  // set activ class ------------------------------------------
-  const [activeSection, setActiveSection] = useState(null);
-
-  useEffect(() => {
-    const handleScroll = () => {
-      const sections = document.querySelectorAll("section");
-      let currentActive = null;
-
-      sections.forEach((section) => {
-        const sectionId = section.id;
-        const rect = section.getBoundingClientRect();
-
-        if (rect.top <= 100 && rect.bottom >= 100) {
-          currentActive = sectionId;
-        }
-      });
-
-      setActiveSection(currentActive);
-    };
-
-    window.addEventListener("scroll", handleScroll);
-    handleScroll();
-
-    return () => {
-      window.removeEventListener("scroll", handleScroll); // Limpia el oyente al desmontar el componente.
-    };
-  }, []);
-  // ---------------------------------------------------------------
-
-  const handleLightTheme = () => {
-    setTheme("light");
-    handleNavbarButton();
-  };
-
-  const handleDarkTheme = () => {
-    setTheme("dark");
-    handleNavbarButton();
-  };
-
-  const handleNavbarButton = () => {
-    setNavbar(!navbar);
-  };
+  const { activeSection } = useActivClass();
 
   return (
     <header className="fixed left-0  top-0 z-50 mx-auto w-full bg-white px-4 shadow dark:border-b dark:border-stone-600 dark:bg-darker sm:px-20">

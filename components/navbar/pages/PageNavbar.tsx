@@ -41,7 +41,6 @@ export const PageNavbar = () => {
   const currentTheme = theme === "system" ? systemTheme : theme;
   const [navbar, setNavbar] = useState(false);
   const path = usePathname();
-  console.log(path);
 
   const handleLightTheme = () => {
     setTheme("light");
