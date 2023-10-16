@@ -6,11 +6,11 @@ import { BsArrowUpRightSquare } from 'react-icons/bs';
 
 import { IProyect } from '@/interfaces';
 
-interface AllProyectsDetailProps {
+interface AllProjectsDetailProps {
 	proyect: IProyect;
 }
 
-export const AllProyectsDetail: FC<AllProyectsDetailProps> = ({ proyect }) => {
+export const AllProjectsDetail: FC<AllProjectsDetailProps> = ({ proyect }) => {
 	const { image, name, slug } = proyect;
 	return (
 		<div className="p-4">
