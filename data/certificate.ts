@@ -63,6 +63,22 @@ export const certificate: ICertificate[] = [
     courseWeeks: 24,
   },
   {
+    name: "JavaScript Moderno: Guía para dominar el lenguaje",
+    slug: "javascript-moderno-guia-para-dominar-el-lenguaje",
+    url: "https://udemy-certificate.s3.amazonaws.com/image/UC-eccd7a9d-0ac1-4b9e-9250-c102da590992.jpg",
+    image: "/studies/javascript-moderno-guia-para-dominar-el-lenguaje.webp",
+    description:
+      "Durante mi formación, he adquirido un conocimiento sólido de JavaScript y su sintaxis fundamental. Esto incluye la comprensión de variables, estructuras de control, funciones y objetos, lo que me ha permitido escribir código JavaScript efectivo y legible. He aprendido a utilizar importaciones y la sintaxis moderna de JavaScript, lo que me ha permitido estructurar mi código de manera más organizada y aprovechar las características más recientes del lenguaje, como las funciones flecha y el desestructurado.  También ha abordado las prácticas modernas de desarrollo en JavaScript, como el uso de async/await para trabajar con promesas y la implementación de patrones de diseño de código limpio y eficiente. En resumen, mi formación en JavaScript incluye un dominio de su sintaxis y las prácticas modernas de desarrollo, así como una comprensión profunda de Webpack y las importaciones de módulos. Estoy preparado para aplicar estos conocimientos en un entorno profesional y contribuir al éxito de su equipo.",
+    dateStart: "07/08/2023",
+    dateFinished: "11/09/2023",
+    linkCurso:
+      "https://www.udemy.com/share/102Bgj3@3R39gNHpulMvSEfVWHMM7Qbsyi_yOlt53l_eyypG2m_W6U4t7mmVle_9CLHBNdd98Q==/",
+    place: "Udemy",
+    type: "course",
+    courseHours: 23,
+    courseWeeks: 6,
+  },
+  {
     name: "Node: De cero a experto ",
     slug: "node-de-cero-a-experto",
     url: "https://udemy-certificate.s3.amazonaws.com/image/UC-546b7726-61e1-404f-bc19-f5823e8ee0f9.jpg",
