@@ -1,26 +1,29 @@
-import React from 'react';
-import { ContactForm } from './ContactForm';
+import React from "react";
+import { ContactForm } from "./ContactForm";
 
 export const ContactSection = () => {
-	return (
-		<section id="contact" className="body-font relative">
-			<div className="container px-5 py-24 lg:my-24 mx-auto">
-				<div className="flex flex-col text-center w-full mb-12">
-					<h2 className="text-center font-bold text-4xl md:text-6xl mt-6 mb-12">
-						Contacto ✉️
-						<hr className="w-6 h-1 mx-auto my-4 bg-primary border-0 rounded" />
-					</h2>
-					<p className="lg:w-2/3 mx-auto leading-relaxed text-base">
-						Me comunicaré contigo a la mayor brevedad posible. No dudes en
-						escribir si tienes alguna pregunta o inquietud.
-					</p>
-				</div>
-				<div className="lg:w-1/2 md:w-2/3 mx-auto">
-					<div className="flex flex-wrap -m-2">
-						<ContactForm />
-					</div>
-				</div>
-			</div>
-		</section>
-	);
+  return (
+    <section
+      id="contact"
+      className="body-font animate__animated animate__fadeIn relative"
+    >
+      <div className="container mx-auto px-5 py-24 lg:my-24">
+        <div className="mb-12 flex w-full flex-col text-center">
+          <h2 className="mb-12 mt-6 text-center text-4xl font-bold md:text-6xl">
+            Contacto ✉️
+            <hr className="mx-auto my-4 h-1 w-6 rounded border-0 bg-primary" />
+          </h2>
+          <p className="mx-auto text-base leading-relaxed lg:w-2/3">
+            Me comunicaré contigo a la mayor brevedad posible. No dudes en
+            escribir si tienes alguna pregunta o inquietud.
+          </p>
+        </div>
+        <div className="mx-auto md:w-2/3 lg:w-1/2">
+          <div className="-m-2 flex flex-wrap">
+            <ContactForm />
+          </div>
+        </div>
+      </div>
+    </section>
+  );
 };

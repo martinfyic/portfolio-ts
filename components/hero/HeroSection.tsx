@@ -12,7 +12,7 @@ export const HeroSection: FC = () => {
 				<HeroImage />
 				<HeroDetail />
 			</div>
-			<ArrowLink />
+			<ArrowLink to="#about" />
 		</section>
 	);
 };
