@@ -72,10 +72,8 @@ export const HomeNavbar = () => {
                   <NextLink
                     key={label}
                     href={`#${page}`}
-                    className={`font-semibol block cursor-pointer hover:text-orange-300 dark:hover:text-orange-300 lg:inline-block ${
-                      activeSection === page
-                        ? "text-primary underline opacity-90"
-                        : ""
+                    className={`font-semibol block cursor-pointer font-semibold hover:text-orange-300 dark:hover:text-orange-300 lg:inline-block ${
+                      activeSection === page ? "text-primary opacity-90" : ""
                     }`}
                     onClick={handleNavbarButton}
                   >

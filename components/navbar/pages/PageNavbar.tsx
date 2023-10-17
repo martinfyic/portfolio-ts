@@ -75,9 +75,7 @@ export const PageNavbar = () => {
                 return (
                   <li
                     key={label}
-                    className={
-                      path === page ? "text-primary underline opacity-90" : ""
-                    }
+                    className={path === page ? "text-primary opacity-90" : ""}
                   >
                     <NextLink
                       href={page}
