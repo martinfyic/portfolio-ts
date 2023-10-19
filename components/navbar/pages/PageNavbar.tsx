@@ -54,6 +54,7 @@ export const PageNavbar = () => {
             <NextLink
               href="/"
               className="cursor-pointer text-2xl font-bold lg:block lg:py-3"
+              aria-label="home button"
             >
               Martin Ferreira
             </NextLink>
@@ -81,6 +82,7 @@ export const PageNavbar = () => {
                       href={page}
                       className="block cursor-pointer font-semibold  hover:text-orange-300 dark:hover:text-orange-300 lg:inline-block"
                       onClick={handleNavbarButton}
+                      aria-label={`Link navigate to ${label}`}
                     >
                       {label}
                     </NextLink>

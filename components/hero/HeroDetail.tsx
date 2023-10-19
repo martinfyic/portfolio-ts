@@ -15,12 +15,14 @@ export const HeroDetail: FC = () => {
         <NextLink
           href="#projects"
           className="cursor-pointer rounded bg-primary px-6 py-3 font-semibold text-white shadow transition-transform hover:-translate-y-1 hover:opacity-70"
+          aria-label="Navigate to projects section"
         >
           Proyectos
         </NextLink>
         <NextLink
           href="#contact"
           className="cursor-pointer rounded border-2 border-black px-6 py-3 font-semibold shadow transition-transform hover:-translate-y-1 hover:opacity-70 dark:border-white"
+          aria-label="Navigate to contact section"
         >
           Contacto
         </NextLink>
