@@ -50,6 +50,7 @@ export const HomeNavbar = () => {
             <NextLink
               href="#home"
               className="cursor-pointer text-2xl font-bold lg:block lg:py-3"
+              aria-label="home button"
             >
               Martin Ferreira
             </NextLink>
@@ -72,6 +73,7 @@ export const HomeNavbar = () => {
                   <NextLink
                     key={label}
                     href={`#${page}`}
+                    aria-label={`Link to ${label}`}
                     className={`font-semibol block cursor-pointer font-semibold hover:text-orange-300 dark:hover:text-orange-300 lg:inline-block ${
                       activeSection === page ? "text-primary opacity-90" : ""
                     }`}

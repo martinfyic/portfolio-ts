@@ -86,7 +86,11 @@ const CertificatePage = async ({ params }: { params: { slug: string } }) => {
         <p>Horas curso: {courseHours}</p>
         <div className="flex flex-row items-center gap-2">
           <p>Url certificado</p>
-          <NextLink href={url} target="_blank">
+          <NextLink
+            href={url}
+            target="_blank"
+            aria-label={`Navigate to course ${name}`}
+          >
             <BiWorld
               size={20}
               className="cursor-pointer transition-transform hover:-translate-y-1"
@@ -95,7 +99,11 @@ const CertificatePage = async ({ params }: { params: { slug: string } }) => {
         </div>
         <div className="flex flex-row items-center gap-2">
           <p>Realizado en {place} </p>
-          <NextLink href={linkCurso} target="_blank">
+          <NextLink
+            href={linkCurso}
+            target="_blank"
+            aria-label={`Navigate to course ${name}`}
+          >
             <BiWorld
               size={20}
               className="cursor-pointer transition-transform hover:-translate-y-1"

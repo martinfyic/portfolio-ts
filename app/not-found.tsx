@@ -1,27 +1,28 @@
-import NextLink from 'next/link';
-import { PageNavbar } from '@/components';
+import NextLink from "next/link";
+import { PageNavbar } from "@/components";
 
 export default function NotFound() {
-	return (
-		<>
-			<PageNavbar />
-			<main className="mt-5">
-				<div className="h-screen flex justify-center items-center">
-					<div>
-						<h2 className="text-3xl md:text-7xl mb-8">
-							<strong className="font-semibold">404</strong> | No encontrado
-						</h2>
-						<div className="flex justify-center items-center">
-							<NextLink
-								href="/"
-								className="text-white font-semibold px-6 py-3 bg-primary rounded shadow hover:-translate-y-1 transition-transform cursor-pointer hover:opacity-70"
-							>
-								Volver a inicio
-							</NextLink>
-						</div>
-					</div>
-				</div>
-			</main>
-		</>
-	);
+  return (
+    <>
+      <PageNavbar />
+      <main className="mt-5">
+        <div className="flex h-screen items-center justify-center">
+          <div>
+            <h2 className="mb-8 text-3xl md:text-7xl">
+              <strong className="font-semibold">404</strong> | No encontrado
+            </h2>
+            <div className="flex items-center justify-center">
+              <NextLink
+                href="/"
+                className="cursor-pointer rounded bg-primary px-6 py-3 font-semibold text-white shadow transition-transform hover:-translate-y-1 hover:opacity-70"
+                aria-label="Return to home page"
+              >
+                Volver a inicio
+              </NextLink>
+            </div>
+          </div>
+        </div>
+      </main>
+    </>
+  );
 }
