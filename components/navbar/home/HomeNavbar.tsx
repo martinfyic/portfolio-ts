@@ -15,19 +15,19 @@ interface NavItem {
 const NAV_ITEMS: NavItem[] = [
   {
     label: "Sobre Mi",
-    page: "about",
+    page: "#about",
   },
   {
     label: "Proyectos",
-    page: "projects",
+    page: "#projects",
   },
   {
     label: "Certificados",
-    page: "certificates",
+    page: "#certificates",
   },
   {
     label: "Contacto",
-    page: "contact",
+    page: "#contact",
   },
 ];
 
@@ -72,7 +72,7 @@ export const HomeNavbar = () => {
                 return (
                   <NextLink
                     key={label}
-                    href={`#${page}`}
+                    href={page}
                     aria-label={`Link to ${label}`}
                     className={`font-semibol block cursor-pointer font-semibold hover:text-orange-300 dark:hover:text-orange-300 lg:inline-block ${
                       activeSection === page ? "text-primary opacity-90" : ""
