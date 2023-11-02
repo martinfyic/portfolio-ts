@@ -1,5 +1,6 @@
 "use client";
 
+import { useEffect } from "react";
 import NextLink from "next/link";
 
 import { RiMoonFill, RiSunLine } from "react-icons/ri";
@@ -15,19 +16,19 @@ interface NavItem {
 const NAV_ITEMS: NavItem[] = [
   {
     label: "Sobre Mi",
-    page: "about",
+    page: "#about",
   },
   {
     label: "Proyectos",
-    page: "projects",
+    page: "#projects",
   },
   {
     label: "Certificados",
-    page: "certificates",
+    page: "#certificates",
   },
   {
     label: "Contacto",
-    page: "contact",
+    page: "#contact",
   },
 ];
 
@@ -42,8 +43,34 @@ export const HomeNavbar = () => {
 
   const { activeSection } = useActivClass();
 
+  useEffect(() => {
+    const handleScroll = () => {
+      const navbarElement = document.querySelector(".navbar");
+      if (navbarElement) {
+        if (window.scrollY > 0) {
+          navbarElement.classList.add("dark:bg-darker");
+          navbarElement.classList.add("bg-white");
+          navbarElement.classList.add("shadow");
+          navbarElement.classList.add("dark:border-b");
+          navbarElement.classList.add("dark:border-stone-600");
+        } else {
+          navbarElement.classList.remove("dark:bg-darker");
+          navbarElement.classList.remove("bg-white");
+          navbarElement.classList.remove("shadow");
+          navbarElement.classList.remove("dark:border-b");
+          navbarElement.classList.remove("dark:border-stone-600");
+        }
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+
   return (
-    <header className="fixed left-0  top-0 z-50 mx-auto w-full bg-white px-4 shadow dark:border-b dark:border-stone-600 dark:bg-darker sm:px-20">
+    <header className="navbar fixed  left-0 top-0 z-50 mx-auto w-full px-4 sm:px-20">
       <div className="justify-between lg:flex lg:items-center">
         <div>
           <div className="flex items-center justify-between py-3">
@@ -72,7 +99,7 @@ export const HomeNavbar = () => {
                 return (
                   <NextLink
                     key={label}
-                    href={`#${page}`}
+                    href={page}
                     aria-label={`Link to ${label}`}
                     className={`font-semibol block cursor-pointer font-semibold hover:text-orange-300 dark:hover:text-orange-300 lg:inline-block ${
                       activeSection === page ? "text-primary opacity-90" : ""
