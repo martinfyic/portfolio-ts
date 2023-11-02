@@ -48,17 +48,11 @@ export const HomeNavbar = () => {
       const navbarElement = document.querySelector(".navbar");
       if (navbarElement) {
         if (window.scrollY > 0) {
-          navbarElement.classList.add("dark:bg-darker");
-          navbarElement.classList.add("bg-white");
-          navbarElement.classList.add("shadow");
-          navbarElement.classList.add("dark:border-b");
-          navbarElement.classList.add("dark:border-stone-600");
+          navbarElement.classList.add("block");
+          navbarElement.classList.remove("hidden");
         } else {
-          navbarElement.classList.remove("dark:bg-darker");
-          navbarElement.classList.remove("bg-white");
-          navbarElement.classList.remove("shadow");
-          navbarElement.classList.remove("dark:border-b");
-          navbarElement.classList.remove("dark:border-stone-600");
+          navbarElement.classList.add("hidden");
+          navbarElement.classList.remove("block");
         }
       }
     };
@@ -70,7 +64,7 @@ export const HomeNavbar = () => {
   }, []);
 
   return (
-    <header className="navbar fixed  left-0 top-0 z-50 mx-auto w-full px-4 sm:px-20">
+    <header className="navbar fixed left-0  top-0 z-50 mx-auto hidden w-full bg-white px-4 shadow dark:border-b dark:border-stone-600 dark:bg-darker sm:px-20">
       <div className="justify-between lg:flex lg:items-center">
         <div>
           <div className="flex items-center justify-between py-3">
