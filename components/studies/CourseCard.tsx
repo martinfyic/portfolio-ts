@@ -1,39 +1,39 @@
-import Image from 'next/image';
-import NextLink from 'next/link';
+import Image from "next/image";
+import NextLink from "next/link";
 
-import { BsArrowUpRightSquare } from 'react-icons/bs';
+import { BsArrowUpRightSquare } from "react-icons/bs";
 
-import { ICertificate } from '@/interfaces';
+import { ICertificate } from "@/interfaces";
 
 interface CourseCardProps {
-	course: ICertificate;
+  course: ICertificate;
 }
 
 export const CourseCard: React.FC<CourseCardProps> = ({ course }) => {
-	const { dateFinished, image, name, place, slug } = course;
+  const { dateFinished, image, name, place, slug } = course;
 
-	return (
-		<div className="rounded-lg overflow-hidden m-4 w-36 md:w-80">
-			<NextLink href={`certificate/${slug}`}>
-				<Image src={image} alt={name} width={300} height={300} />
-			</NextLink>
-			<div className="p-4">
-				<h3 className="mb-1 text-sm md:text-xl font-semibold">{name}</h3>
-				<p className="text-gray-700 text-xs md:text-sm dark:text-slate-400">
-					Fecha obtención: {dateFinished}
-				</p>
-				<p className="text-gray-700 text-sm dark:text-slate-400">
-					Lugar: {place}
-				</p>
-				<div className="mt-3">
-					<NextLink href={`/certificate/${slug}`}>
-						<BsArrowUpRightSquare
-							size={30}
-							className="hover:-translate-y-1 transition-transform cursor-pointer"
-						/>
-					</NextLink>
-				</div>
-			</div>
-		</div>
-	);
+  return (
+    <div className="m-4 flex w-36 flex-col items-center justify-center overflow-hidden rounded-lg align-middle md:w-80">
+      <NextLink href={`certificate/${slug}`}>
+        <Image src={image} alt={name} width={300} height={300} />
+      </NextLink>
+      <div className="p-4">
+        <h3 className="mb-1 text-sm font-semibold md:text-xl">{name}</h3>
+        <p className="text-xs text-gray-700 dark:text-slate-400 md:text-sm">
+          Fecha obtención: {dateFinished}
+        </p>
+        <p className="text-sm text-gray-700 dark:text-slate-400">
+          Lugar: {place}
+        </p>
+        <div className="mt-3 flex justify-center align-middle">
+          <NextLink href={`/certificate/${slug}`}>
+            <BsArrowUpRightSquare
+              size={30}
+              className="cursor-pointer transition-transform hover:-translate-y-1"
+            />
+          </NextLink>
+        </div>
+      </div>
+    </div>
+  );
 };
