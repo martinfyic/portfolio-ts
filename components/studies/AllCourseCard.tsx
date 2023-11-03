@@ -19,7 +19,7 @@ export const AllCourseCard: FC<CourseCardProps> = ({ course }) => {
         alt={name}
         width={400}
         height={400}
-        className="rounded shadow-lg"
+        className="rounded shadow-xl dark:shadow-xl"
         priority
         data-aos="zoom-in"
       />
