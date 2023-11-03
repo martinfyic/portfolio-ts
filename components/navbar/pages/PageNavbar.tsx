@@ -47,7 +47,7 @@ export const PageNavbar = () => {
   } = useDarkMode();
 
   return (
-    <header className="fixed top-0  z-50 mx-auto w-full bg-white px-4 shadow dark:border-b dark:border-stone-600 dark:bg-darker sm:px-20">
+    <header className="bg-light fixed  top-0 z-50 mx-auto w-full bg-opacity-90 px-4 shadow dark:border-b dark:border-stone-600 dark:bg-darker dark:bg-opacity-90 sm:px-20">
       <div className="justify-between lg:flex lg:items-center">
         <div>
           <div className="flex items-center justify-between py-3">

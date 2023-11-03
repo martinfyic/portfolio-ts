@@ -64,7 +64,7 @@ export const HomeNavbar = () => {
   }, []);
 
   return (
-    <header className="navbar fixed left-0  top-0 z-50 mx-auto hidden w-full bg-white px-4 shadow dark:border-b dark:border-stone-600 dark:bg-darker sm:px-20">
+    <header className="navbar bg-light fixed left-0  top-0 z-50 mx-auto hidden w-full bg-opacity-90 px-4 shadow dark:border-b dark:border-stone-600 dark:bg-darker dark:bg-opacity-95 sm:px-20">
       <div className="justify-between lg:flex lg:items-center">
         <div>
           <div className="flex items-center justify-between py-3">
