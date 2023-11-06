@@ -43,28 +43,8 @@ export const HomeNavbar = () => {
 
   const { activeSection } = useActivClass();
 
-  useEffect(() => {
-    const handleScroll = () => {
-      const navbarElement = document.querySelector(".navbar");
-      if (navbarElement) {
-        if (window.scrollY > 0) {
-          navbarElement.classList.add("block");
-          navbarElement.classList.remove("hidden");
-        } else {
-          navbarElement.classList.add("hidden");
-          navbarElement.classList.remove("block");
-        }
-      }
-    };
-
-    window.addEventListener("scroll", handleScroll);
-    return () => {
-      window.removeEventListener("scroll", handleScroll);
-    };
-  }, []);
-
   return (
-    <header className="navbar bg-light fixed left-0  top-0 z-50 mx-auto hidden w-full bg-opacity-90 px-4 shadow dark:border-b dark:border-stone-600 dark:bg-darker dark:bg-opacity-95 sm:px-20">
+    <header className="navbar fixed left-0 top-0  z-50 mx-auto w-full bg-light bg-opacity-90 px-4 shadow dark:border-b dark:border-stone-600 dark:bg-darker dark:bg-opacity-95 sm:px-20">
       <div className="justify-between lg:flex lg:items-center">
         <div>
           <div className="flex items-center justify-between py-3">
