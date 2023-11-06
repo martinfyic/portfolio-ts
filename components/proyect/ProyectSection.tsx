@@ -39,7 +39,7 @@ export const ProyectSection = () => {
                     <h3 className="mb-6 text-2xl font-semibold md:text-3xl">
                       {name}
                     </h3>
-                    <p className="truncate-3-lines mb-4 leading-7 sm:text-base md:text-lg">
+                    <p className="mb-4 line-clamp-5 leading-7 sm:text-base md:text-lg">
                       {description}
                     </p>
                     <div className="flex flex-row space-x-4 align-bottom">
