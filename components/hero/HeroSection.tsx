@@ -7,7 +7,7 @@ import { ArrowLink } from "../ui";
 
 export const HeroSection: FC = () => {
   return (
-    <section id="home">
+    <section id="home" className="relative">
       <div className="my-10 flex flex-col items-center justify-center py-10 text-center lg:flex-row xl:my-24 xl:py-24">
         <HeroImage />
         <HeroDetail />
