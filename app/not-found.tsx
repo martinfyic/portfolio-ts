@@ -14,7 +14,7 @@ export default function NotFound() {
             <div className="flex items-center justify-center">
               <NextLink
                 href="/"
-                className="cursor-pointer rounded bg-primary px-6 py-3 font-semibold text-white shadow transition-transform hover:-translate-y-1 hover:opacity-70"
+                className="cursor-pointer rounded bg-primary px-6 py-3 font-semibold text-light shadow transition-transform hover:-translate-y-1 hover:opacity-70"
                 aria-label="Return to home page"
               >
                 Volver a inicio
