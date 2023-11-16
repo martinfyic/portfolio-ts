@@ -83,7 +83,7 @@ export const ProyectSection = () => {
       <div className="mt-10 flex items-center justify-center pt-10">
         <NextLink
           href="/project"
-          className="flex cursor-pointer flex-row items-center justify-center gap-2 rounded border-2 border-black px-6 py-3 font-semibold shadow transition-transform hover:-translate-y-1 dark:border-white"
+          className="flex cursor-pointer flex-row items-center justify-center gap-2 rounded border-2 border-black px-6 py-3 font-semibold shadow transition-transform hover:-translate-y-1 dark:border-light"
           aria-label="Navigate to all project page"
         >
           Todos los proyectos
