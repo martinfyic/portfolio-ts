@@ -4,16 +4,14 @@ import { BsArrowUpRightSquare } from "react-icons/bs";
 
 import { CourseCard } from "./CourseCard";
 import { certificate } from "@/data";
+import { SubTitleSection } from "../ui";
 
 export const StudiesSection = () => {
   const firstFourCertificate = certificate.slice(0, 4);
 
   return (
     <section id="certificates" className="my-8 py-16">
-      <h2 className="my-12 text-center text-4xl font-bold md:text-6xl">
-        Certificados 🎓
-        <hr className="mx-auto my-4 h-1 w-6 rounded border-0 bg-primary" />
-      </h2>
+      <SubTitleSection text="Certificados 🎓" />
       <div className="grid grid-cols-2 place-content-center place-items-center gap-4 md:grid-cols-2">
         {firstFourCertificate.map((course) => (
           <CourseCard key={course.slug} course={course} />

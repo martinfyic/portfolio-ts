@@ -1,5 +1,6 @@
 import React from "react";
 import { ContactForm } from "./ContactForm";
+import { SubTitleSection } from "../ui";
 
 export const ContactSection = () => {
   return (
@@ -9,10 +10,7 @@ export const ContactSection = () => {
     >
       <div className="container mx-auto px-5 py-24 lg:my-24">
         <div className="mb-12 flex w-full flex-col text-center">
-          <h2 className="mb-12 mt-6 text-center text-4xl font-bold md:text-6xl">
-            Contacto ✉️
-            <hr className="mx-auto my-4 h-1 w-6 rounded border-0 bg-primary" />
-          </h2>
+          <SubTitleSection text="Contacto ✉️" />
           <p className="mx-auto text-base leading-relaxed lg:w-2/3">
             Me comunicaré contigo a la mayor brevedad posible. No dudes en
             escribir si tienes alguna pregunta o inquietud.

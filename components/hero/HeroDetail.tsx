@@ -1,12 +1,12 @@
 import { FC } from "react";
 import NextLink from "next/link";
+import { MainTitle } from "../ui";
 
 export const HeroDetail: FC = () => {
   return (
     <div className="animate__animated animate__fadeIn lg:mt-2 lg:w-3/5 lg:text-left">
-      <h1 className="mt-6 text-4xl font-bold lg:mt-0 lg:text-6xl">
-        Hola 👋🏻, soy Martín!
-      </h1>
+      <MainTitle title="Hola 👋🏻, soy Martín!" />
+
       <p className="mb-6 mt-4 text-lg font-semibold lg:text-2xl">
         Desarrollador <span className="text-primary">Full Stack</span> en
         Montevideo, UY.
