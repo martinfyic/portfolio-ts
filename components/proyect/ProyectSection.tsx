@@ -5,14 +5,12 @@ import { BsGithub, BsArrowUpRightSquare } from "react-icons/bs";
 import { BiWorld } from "react-icons/bi";
 
 import { proyects } from "@/data";
+import { SubTitleSection } from "../ui";
 
 export const ProyectSection = () => {
   return (
     <section id="projects" className="my-12 py-12 md:pb-24">
-      <h2 className="my-14 text-center text-4xl font-bold md:text-6xl">
-        Proyectos
-        <hr className="mx-auto my-4 h-1 w-6 rounded border-0 bg-primary" />
-      </h2>
+      <SubTitleSection text="Proyectos" />
       <div className="flex flex-col space-y-28">
         {proyects.map(
           ({ slug, image, name, description, github, link }, idx) => {
