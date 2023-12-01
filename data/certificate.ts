@@ -130,7 +130,7 @@ export const certificate: ICertificate[] = [
     url: "https://udemy-certificate.s3.amazonaws.com/image/UC-d7fb5ed2-16b9-429d-bb7f-fb33e8573882.jpg",
     image: "/studies/principios-solid-y-clean-code.webp",
     description:
-      "En este curso aprenderás los 5 principios S.O.L.I.D. de diseño de software, que son fundamentales para crear código limpio, modular y reutilizable. Estos principios son: Single Responsibility Principle (SRP), Open/Closed Principle (OCP), Liskov Substitution Principle (LSP), Interface Segregation Principle (ISP), Dependency Inversion Principle (DIP)",
+      "En este curso aprendí los 5 principios S.O.L.I.D. de diseño de software, que son fundamentales para crear código limpio, modular y reutilizable. Estos principios son: Single Responsibility Principle (SRP), Open/Closed Principle (OCP), Liskov Substitution Principle (LSP), Interface Segregation Principle (ISP), Dependency Inversion Principle (DIP)",
     dateFinished: "20/11/2023",
     linkCurso: "https://www.udemy.com/course/solid-clean/?kw=clean&src=sac",
     place: "Udemy",
