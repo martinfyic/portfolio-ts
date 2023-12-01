@@ -3,7 +3,7 @@ import { AllProjectsDetail } from "@/components";
 
 export const generateMetadata = async () => {
   return {
-    title: "Todos mis Proyectos | Martin Ferreira",
+    title: "Proyectos realizados | Martin Ferreira",
     description: "Portfolio de Martin Ferreira Yic, Todos los proyectos",
     authors: [
       {
