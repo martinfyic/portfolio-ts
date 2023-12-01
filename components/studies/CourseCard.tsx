@@ -15,7 +15,13 @@ export const CourseCard: React.FC<CourseCardProps> = ({ course }) => {
   return (
     <div className="m-4 flex w-36 flex-col items-center justify-center overflow-hidden rounded-lg align-middle md:w-80">
       <NextLink href={`certificate/${slug}`}>
-        <Image src={image} alt={name} width={300} height={300} />
+        <Image
+          src={image}
+          alt={name}
+          width={300}
+          height={300}
+          className="hover:opacity-70"
+        />
       </NextLink>
       <div className="p-4">
         <h3 className="mb-1 text-sm font-semibold md:text-xl">{name}</h3>
