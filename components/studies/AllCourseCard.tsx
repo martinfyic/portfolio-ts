@@ -14,15 +14,21 @@ export const AllCourseCard: FC<CourseCardProps> = ({ course }) => {
   const { image, name, slug } = course;
   return (
     <div className="p-4">
-      <Image
-        src={image}
-        alt={name}
-        width={400}
-        height={400}
-        className="rounded shadow-xl dark:shadow-xl"
-        priority
-        data-aos="zoom-in"
-      />
+      <NextLink
+        href={`/certificate/${slug}`}
+        aria-label={`Navigate to ${name} course`}
+        className="hover:opacity-70"
+      >
+        <Image
+          src={image}
+          alt={name}
+          width={400}
+          height={400}
+          className="rounded shadow-xl dark:shadow-xl"
+          priority
+          data-aos="zoom-in"
+        />
+      </NextLink>
 
       <h2 className="my-3 p-2 text-center text-sm font-semibold md:text-lg">
         {name}
