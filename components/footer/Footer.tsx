@@ -12,7 +12,9 @@ export const Footer = () => {
     <footer className="mx-auto max-w-3xl px-4 sm:px-6 md:max-w-5xl">
       <hr className="mx-auto mt-8 h-0.5 w-full border-0 bg-neutral-300" />
       <div className="mx-auto flex flex-col p-4 text-center md:flex-row md:justify-between">
-        <div className="font-semibold">&#169; {actualYear} Martin Ferreira</div>
+        <div className="font-semibold">
+          &#169; {actualYear} Martin Ferreira 👋
+        </div>
         <div className="mb-2 flex flex-row items-center justify-center space-x-2">
           <NextLink
             href="https://github.com/martinfyic"

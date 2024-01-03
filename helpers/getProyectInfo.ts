@@ -1,7 +1,7 @@
-import { proyects } from '@/data';
-import { IProyect } from '@/interfaces';
+import { projects } from "@/data";
+import { IProject } from "@/interfaces";
 
-export const getProyectInfo = async (slug: string): Promise<IProyect> => {
-	const data = proyects.filter(p => p.slug === slug);
-	return data[0];
+export const getProyectInfo = async (slug: string): Promise<IProject> => {
+  const data = projects.filter((p) => p.slug === slug);
+  return data[0];
 };

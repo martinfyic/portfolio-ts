@@ -4,15 +4,15 @@ import NextLink from "next/link";
 import { BsGithub, BsArrowUpRightSquare } from "react-icons/bs";
 import { BiWorld } from "react-icons/bi";
 
-import { proyects } from "@/data";
+import { projects } from "@/data";
 import { SubTitleSection } from "../ui";
 
-export const ProyectSection = () => {
+export const ProjectSection = () => {
   return (
     <section id="projects" className="my-12 py-12 md:pb-24">
       <SubTitleSection text="Proyectos" />
-      <div className="flex flex-col space-y-28">
-        {proyects.map(
+      <article className="flex flex-col space-y-28">
+        {projects.map(
           ({ slug, image, name, description, github, link }, idx) => {
             return (
               <div key={idx}>
@@ -77,7 +77,7 @@ export const ProyectSection = () => {
             );
           },
         )}
-      </div>
+      </article>
       <div className="mt-10 flex items-center justify-center pt-10">
         <NextLink
           href="/project"

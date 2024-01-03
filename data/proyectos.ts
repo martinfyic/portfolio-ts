@@ -1,6 +1,6 @@
-import { IProyect } from "@/interfaces";
+import { IProject } from "@/interfaces";
 
-export const proyects: IProyect[] = [
+export const projects: IProject[] = [
   {
     name: "Backend Ecommerce NodeJs",
     description:

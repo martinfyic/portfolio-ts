@@ -4,10 +4,10 @@ import NextLink from "next/link";
 
 import { BsArrowUpRightSquare } from "react-icons/bs";
 
-import { IProyect } from "@/interfaces";
+import { IProject } from "@/interfaces";
 
 interface AllProjectsDetailProps {
-  proyect: IProyect;
+  proyect: IProject;
 }
 
 export const AllProjectsDetail: FC<AllProjectsDetailProps> = ({ proyect }) => {

@@ -6,10 +6,10 @@ import { BsGithub } from "react-icons/bs";
 import { BiWorld } from "react-icons/bi";
 
 import { getProyectInfo, getPaths } from "@/helpers";
-import { proyects } from "@/data";
+import { projects } from "@/data";
 
 export async function generateStaticParams() {
-  const paths = await getPaths({ prop: proyects });
+  const paths = await getPaths({ prop: projects });
 
   return paths.map((path) => {
     return {

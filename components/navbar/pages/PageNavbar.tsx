@@ -6,6 +6,7 @@ import { usePathname } from "next/navigation";
 import { RiMoonFill, RiSunLine } from "react-icons/ri";
 import { IoMdMenu, IoMdClose } from "react-icons/io";
 import { useDarkMode } from "@/hooks";
+import { Logo } from "@/components";
 
 interface NavItem {
   label: string;
@@ -47,17 +48,11 @@ export const PageNavbar = () => {
   } = useDarkMode();
 
   return (
-    <header className="bg-light fixed  top-0 z-50 mx-auto w-full bg-opacity-90 px-4 shadow dark:border-b dark:border-stone-600 dark:bg-darker dark:bg-opacity-90 sm:px-20">
+    <header className="fixed top-0  z-50 mx-auto w-full bg-light bg-opacity-90 px-4 shadow sm:px-20 dark:border-b dark:border-stone-600 dark:bg-darker dark:bg-opacity-90">
       <div className="justify-between lg:flex lg:items-center">
         <div>
           <div className="flex items-center justify-between py-3">
-            <NextLink
-              href="/"
-              className="cursor-pointer text-2xl font-bold lg:block lg:py-3"
-              aria-label="home button"
-            >
-              Martin Ferreira
-            </NextLink>
+            <Logo currentTheme={currentTheme} />
             <div className="lg:hidden">
               <button onClick={handleNavbarButton} aria-label="menu button">
                 {navbar ? <IoMdClose size={30} /> : <IoMdMenu size={30} />}
@@ -80,7 +75,7 @@ export const PageNavbar = () => {
                   >
                     <NextLink
                       href={page}
-                      className="block cursor-pointer font-semibold  hover:text-orange-300 dark:hover:text-orange-300 lg:inline-block"
+                      className="block cursor-pointer font-semibold  hover:text-orange-300 lg:inline-block dark:hover:text-orange-300"
                       onClick={handleNavbarButton}
                       aria-label={`Link navigate to ${label}`}
                     >
