@@ -7,6 +7,7 @@ import { RiMoonFill, RiSunLine } from "react-icons/ri";
 import { IoMdMenu, IoMdClose } from "react-icons/io";
 
 import { useActivClass, useDarkMode } from "@/hooks";
+import { Logo } from "@/components";
 
 interface NavItem {
   label: string;
@@ -44,16 +45,16 @@ export const HomeNavbar = () => {
   const { activeSection } = useActivClass();
 
   return (
-    <header className="navbar fixed left-0 top-0  z-50 mx-auto w-full bg-light bg-opacity-90 px-4 shadow dark:border-b dark:border-stone-600 dark:bg-darker dark:bg-opacity-95 sm:px-20">
+    <header className="navbar fixed left-0 top-0  z-50 mx-auto w-full bg-light bg-opacity-90 px-4 shadow sm:px-20 dark:border-b dark:border-stone-600 dark:bg-darker dark:bg-opacity-95">
       <div className="justify-between lg:flex lg:items-center">
         <div>
           <div className="flex items-center justify-between py-3">
             <NextLink
               href="#home"
-              className="cursor-pointer text-2xl font-bold lg:block lg:py-3"
+              className="cursor-pointer lg:block"
               aria-label="home button"
             >
-              Martin Ferreira
+              <Logo currentTheme={currentTheme} />
             </NextLink>
             <div className="lg:hidden">
               <button onClick={handleNavbarButton} aria-label="menu button">
@@ -75,7 +76,7 @@ export const HomeNavbar = () => {
                     key={label}
                     href={page}
                     aria-label={`Link to ${label}`}
-                    className={`font-semibol block cursor-pointer font-semibold hover:text-orange-300 dark:hover:text-orange-300 lg:inline-block ${
+                    className={`font-semibol block cursor-pointer font-semibold hover:text-orange-300 lg:inline-block dark:hover:text-orange-300 ${
                       activeSection === page ? "text-primary opacity-90" : ""
                     }`}
                     onClick={handleNavbarButton}

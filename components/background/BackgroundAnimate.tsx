@@ -2,7 +2,7 @@
 
 import { useEffect } from "react";
 
-export const BackgraoundAnimate = () => {
+export const BackgroundAnimate = () => {
   useEffect(() => {
     const hero = document.getElementById("icons");
     const svgs = Array.from(hero!.querySelectorAll("svg"));

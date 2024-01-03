@@ -8,7 +8,7 @@ export const HeroDetail: FC = () => {
       <MainTitle title="Hola 👋🏻, soy Martín!" />
 
       <p className="mb-6 mt-4 text-lg font-semibold lg:text-2xl">
-        Desarrollador <span className="text-primary">Full Stack</span> en
+        Programador Web <span className="text-primary">Full Stack</span> en
         Montevideo, UY.
       </p>
       <div className="flex items-center justify-center gap-3 lg:justify-start">

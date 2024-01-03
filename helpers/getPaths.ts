@@ -1,9 +1,9 @@
-import { ICertificate, IProyect } from '@/interfaces';
+import { ICertificate, IProject } from "@/interfaces";
 
 interface Props {
-	prop: (ICertificate | IProyect)[];
+  prop: (ICertificate | IProject)[];
 }
 
 export const getPaths = async ({ prop }: Props): Promise<string[]> => {
-	return prop.map(c => c.slug);
+  return prop.map((c) => c.slug);
 };

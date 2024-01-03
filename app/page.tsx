@@ -1,37 +1,36 @@
-import type { Metadata } from "next";
+import { Metadata } from "next";
+
 import {
   AboutSection,
-  BackgraoundAnimate,
+  BackgroundAnimate,
   ContactSection,
   HeroSection,
   HomeNavbar,
-  ProyectSection,
+  ProjectSection,
   StudiesSection,
 } from "@/components";
 
 export const metadata: Metadata = {
-  title: "Martin Ferreira | Full Stack Dev",
+  title: "Martin Ferreira | Programador Web Full Stack",
   description:
-    "Portfolio de Martin Ferreira Yic, Desarrollador Web Full Stack, stack MERN, Next.js, CSS, HTML",
+    "Portfolio de Martin Ferreira Yic, Programador Web Full Stack, stack MERN, Next.js, CSS, HTML",
   keywords:
-    "JavaScipr, TypeScript, React, Next.js, Node, HTML, CSS, Developer, Full Stack, MERN, Express",
+    "JavaScipr, TypeScript, React, Next.js, Astro, Node, HTML, CSS, Developer, Full Stack, MERN, Express",
   authors: [
     {
       name: "Martin Ferreira Yic",
       url: "https://www.linkedin.com/in/martin-ferreira-yic/",
     },
   ],
-  icons: [
-    {
-      rel: "icon",
-      url: "data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>👨🏻‍💻</text></svg>",
-    },
-  ],
+  icons: {
+    icon: ["/favicon.ico?v=4"],
+    apple: ["/apple-touch-icon.png?v=4"],
+    shortcut: ["apple-touch-icon.png"],
+  },
   metadataBase: new URL("http://localhost:3000/"),
   openGraph: {
-    title: "Martin Ferreira | Full Stack Developer",
-    description:
-      "Portfolio de Martin Ferreira Yic, Desarrollador Web Full Stack",
+    title: "Martin Ferreira | Programador Web Full Stack",
+    description: "Portfolio de Martin Ferreira Yic, Programador Web Full Stack",
     images: [
       {
         url: "/og-web.png",
@@ -45,11 +44,11 @@ export const metadata: Metadata = {
 export default function Home() {
   return (
     <main className="mx-auto max-w-3xl px-4 sm:px-6 md:max-w-5xl">
-      <BackgraoundAnimate />
+      <BackgroundAnimate />
       <HomeNavbar />
       <HeroSection />
       <AboutSection />
-      <ProyectSection />
+      <ProjectSection />
       <StudiesSection />
       <ContactSection />
     </main>
