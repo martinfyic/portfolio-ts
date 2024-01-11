@@ -108,7 +108,7 @@ export const ContactForm = () => {
               <div className="flex w-full items-center justify-center p-2">
                 <button
                   disabled={isLoading}
-                  className="text-libg-light cursor-pointer rounded bg-primary px-6 py-3 font-semibold shadow transition-transform hover:-translate-y-1 hover:opacity-70"
+                  className="cursor-pointer rounded bg-primary px-6 py-3 font-semibold text-light shadow transition-transform hover:-translate-y-1 hover:bg-primary/90"
                 >
                   Enviar
                 </button>
