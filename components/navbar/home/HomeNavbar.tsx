@@ -1,10 +1,11 @@
 "use client";
 
-import { useEffect } from "react";
 import NextLink from "next/link";
 
 import { RiMoonFill, RiSunLine } from "react-icons/ri";
 import { IoMdMenu, IoMdClose } from "react-icons/io";
+import { IoPerson, IoBagSharp, IoCall } from "react-icons/io5";
+import { LiaCertificateSolid } from "react-icons/lia";
 
 import { useActivClass, useDarkMode } from "@/hooks";
 import { Logo } from "@/components";
@@ -12,24 +13,29 @@ import { Logo } from "@/components";
 interface NavItem {
   label: string;
   page: string;
+  icon: React.ReactNode;
 }
 
 const NAV_ITEMS: NavItem[] = [
   {
     label: "Sobre Mi",
     page: "#about",
+    icon: <IoPerson size={20} />,
   },
   {
     label: "Proyectos",
     page: "#projects",
+    icon: <IoBagSharp size={20} />,
   },
   {
     label: "Certificados",
     page: "#certificates",
+    icon: <LiaCertificateSolid size={20} />,
   },
   {
     label: "Contacto",
     page: "#contact",
+    icon: <IoCall size={20} />,
   },
 ];
 
@@ -70,18 +76,21 @@ export const HomeNavbar = () => {
             }`}
           >
             <div className="items-center justify-center space-y-8 lg:flex lg:space-x-6 lg:space-y-0">
-              {NAV_ITEMS.map(({ label, page }) => {
+              {NAV_ITEMS.map(({ label, page, icon }) => {
                 return (
                   <NextLink
                     key={label}
                     href={page}
                     aria-label={`Link to ${label}`}
-                    className={`font-semibol block cursor-pointer font-semibold hover:text-orange-300 lg:inline-block dark:hover:text-orange-300 ${
+                    className={`block cursor-pointer font-semibold hover:text-orange-300 lg:inline-block dark:hover:text-orange-300 ${
                       activeSection === page ? "text-primary opacity-90" : ""
                     }`}
                     onClick={handleNavbarButton}
                   >
-                    {label}
+                    <div className="flex flex-row items-center justify-center gap-2">
+                      {icon}
+                      {label}
+                    </div>
                   </NextLink>
                 );
               })}
@@ -89,7 +98,7 @@ export const HomeNavbar = () => {
                 <button
                   onClick={handleLightTheme}
                   className="rounded-xl bg-slate-100 p-2"
-                  aria-label="Light buttom theme"
+                  aria-label="Light button theme"
                 >
                   <RiSunLine size={25} color="black" />
                 </button>
@@ -97,7 +106,7 @@ export const HomeNavbar = () => {
                 <button
                   onClick={handleDarkTheme}
                   className="rounded-xl bg-slate-100 p-2"
-                  aria-label="Dark buttom theme"
+                  aria-label="Dark button theme"
                 >
                   <RiMoonFill size={25} color="black" />
                 </button>
