@@ -5,7 +5,7 @@ import NextLink from "next/link";
 import { RiMoonFill, RiSunLine } from "react-icons/ri";
 import { IoMdMenu, IoMdClose } from "react-icons/io";
 import { IoPerson, IoBagSharp, IoCall } from "react-icons/io5";
-import { LiaCertificateSolid } from "react-icons/lia";
+import { PiCertificateFill } from "react-icons/pi";
 
 import { useActivClass, useDarkMode } from "@/hooks";
 import { Logo } from "@/components";
@@ -30,7 +30,7 @@ const NAV_ITEMS: NavItem[] = [
   {
     label: "Certificados",
     page: "#certificates",
-    icon: <LiaCertificateSolid size={20} />,
+    icon: <PiCertificateFill size={20} />,
   },
   {
     label: "Contacto",
@@ -88,8 +88,8 @@ export const HomeNavbar = () => {
                     onClick={handleNavbarButton}
                   >
                     <div className="flex flex-row items-center justify-center gap-2">
-                      {icon}
                       {label}
+                      {icon}
                     </div>
                   </NextLink>
                 );
