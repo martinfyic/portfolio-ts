@@ -4,8 +4,6 @@ import NextLink from "next/link";
 
 import { RiMoonFill, RiSunLine } from "react-icons/ri";
 import { IoMdMenu, IoMdClose } from "react-icons/io";
-import { IoPerson, IoBagSharp, IoCall } from "react-icons/io5";
-import { PiCertificateFill } from "react-icons/pi";
 
 import { useActivClass, useDarkMode } from "@/hooks";
 import { Logo } from "@/components";
@@ -13,29 +11,24 @@ import { Logo } from "@/components";
 interface NavItem {
   label: string;
   page: string;
-  icon: React.ReactNode;
 }
 
 const NAV_ITEMS: NavItem[] = [
   {
     label: "Sobre Mi",
     page: "#about",
-    icon: <IoPerson size={20} />,
   },
   {
     label: "Proyectos",
     page: "#projects",
-    icon: <IoBagSharp size={20} />,
   },
   {
     label: "Certificados",
     page: "#certificates",
-    icon: <PiCertificateFill size={20} />,
   },
   {
     label: "Contacto",
     page: "#contact",
-    icon: <IoCall size={20} />,
   },
 ];
 
@@ -75,8 +68,8 @@ export const HomeNavbar = () => {
               navbar ? "block" : "hidden"
             }`}
           >
-            <div className="items-center justify-center space-y-8 lg:flex lg:space-x-6 lg:space-y-0">
-              {NAV_ITEMS.map(({ label, page, icon }) => {
+            <div className="flex flex-col items-center justify-center space-y-8 lg:flex lg:flex-row lg:space-x-6 lg:space-y-0">
+              {NAV_ITEMS.map(({ label, page }) => {
                 return (
                   <NextLink
                     key={label}
@@ -87,10 +80,7 @@ export const HomeNavbar = () => {
                     }`}
                     onClick={handleNavbarButton}
                   >
-                    <div className="flex flex-row items-center justify-center gap-2">
-                      {label}
-                      {icon}
-                    </div>
+                    {label}
                   </NextLink>
                 );
               })}
