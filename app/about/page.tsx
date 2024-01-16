@@ -2,11 +2,11 @@ import Image from "next/image";
 
 const AboutPage = () => {
   return (
-    <section className="flex  h-full flex-col items-center justify-center text-center">
-      <h1 className="mb-12 text-center text-4xl font-bold md:text-6xl">
+    <section className="flex  h-auto flex-col items-center">
+      <h1 className="mb-16 text-center text-4xl font-bold md:text-6xl">
         Sobre Mi
       </h1>
-      <article className="m-auto max-w-2xl p-2 md:text-xl">
+      <article className="m-auto max-w-3xl text-pretty p-2 md:text-xl lg:max-w-4xl">
         <p className="mb-6 text-pretty">
           Saludos, me llamo{" "}
           <span className="font-semibold text-primary">

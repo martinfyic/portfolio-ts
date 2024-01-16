@@ -15,7 +15,7 @@ export const metadata: Metadata = {
   description:
     "Portfolio de Martin Ferreira Yic, Programador Web Full Stack, stack MERN, Next.js, CSS, HTML",
   keywords:
-    "JavaScipr, TypeScript, React, Next.js, Astro, Node, HTML, CSS, Developer, Full Stack, MERN, Express",
+    "JavaScript, TypeScript, React, Next.js, Astro, Node, HTML, CSS, Developer, Full Stack, MERN, Express",
   authors: [
     {
       name: "Martin Ferreira Yic",
