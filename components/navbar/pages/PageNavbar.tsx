@@ -7,6 +7,7 @@ import { RiMoonFill, RiSunLine } from "react-icons/ri";
 import { IoMdMenu, IoMdClose } from "react-icons/io";
 import { useDarkMode } from "@/hooks";
 import { Logo } from "@/components";
+import { useEffect, useState } from "react";
 
 interface NavItem {
   label: string;
@@ -39,6 +40,12 @@ const NAV_ITEMS: NavItem[] = [
 export const PageNavbar = () => {
   const path = usePathname();
 
+  const [mounted, setMounted] = useState(false);
+
+  useEffect(() => {
+    setMounted(true);
+  }, []);
+
   const {
     currentTheme,
     handleDarkTheme,
@@ -52,7 +59,7 @@ export const PageNavbar = () => {
       <div className="justify-between lg:flex lg:items-center">
         <div>
           <div className="flex items-center justify-between py-3">
-            <Logo currentTheme={currentTheme} />
+            {mounted && <Logo currentTheme={currentTheme} />}
             <div className="lg:hidden">
               <button onClick={handleNavbarButton} aria-label="menu button">
                 {navbar ? <IoMdClose size={30} /> : <IoMdMenu size={30} />}
