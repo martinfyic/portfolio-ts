@@ -111,7 +111,7 @@ const CertificatePage = async ({ params }: { params: { slug: string } }) => {
           </NextLink>
         </div>
       </div>
-      <p>{description}</p>
+      <p className="text-pretty">{description}</p>
     </main>
   );
 };

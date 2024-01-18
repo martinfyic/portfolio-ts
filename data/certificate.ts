@@ -3,7 +3,7 @@ import { ICertificate } from "@/interfaces";
 export const certificate: ICertificate[] = [
   {
     name: "Desarrollo Full Stack",
-    slug: "carrera-de-desarroll-full-stack",
+    slug: "carrera-de-desarrollo-full-stack",
     url: "https://www.coderhouse.com.uy/certificados/644187e006739a0002c80906",
     image: "/studies/full-stack-mern.webp",
     description:
@@ -46,6 +46,21 @@ export const certificate: ICertificate[] = [
     type: "course",
     courseHours: 28,
     courseWeeks: 7,
+  },
+  {
+    name: "Programación con Java",
+    slug: "programacion_con_java",
+    url: "https://www.coderhouse.com.uy/certificados/6583fc723d6b8f86412638ae?lang=es",
+    image: "/studies/programacion_con_java.webp",
+    description:
+      "En el curso de Programación con Java, he adquirido las nociones centrales de este lenguaje y he explorado las virtudes de la programación orientada a objetos. He desarrollado habilidades para crear aplicaciones desde cero, comprender estructuras de control y clases, así como implementar prácticas de programación eficientes. Estoy preparado para afrontar desafíos avanzados en el desarrollo de software y ansío aplicar estos conocimientos en un entorno profesional.",
+    dateStart: "10/10/2023",
+    dateFinished: "19/12/2023",
+    linkCurso: "https://www.coderhouse.com.uy/online/programacion-con-java",
+    place: "Coderhouse",
+    type: "course",
+    courseHours: 32,
+    courseWeeks: 8,
   },
   {
     name: "Programación Backend",
