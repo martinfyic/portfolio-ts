@@ -8,5 +8,3 @@ export * from "./navbar";
 export * from "./project";
 export * from "./studies";
 export * from "./ui";
-export { GoogleAnalytics } from "./GoogleAnalytics";
-export { CookieBanner } from "./CookieBanner";
