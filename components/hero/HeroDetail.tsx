@@ -4,7 +4,7 @@ import { MainTitle } from "../ui";
 
 export const HeroDetail: FC = () => {
   return (
-    <div className="animate__animated animate__fadeIn lg:mt-2 lg:w-3/5 lg:text-left">
+    <div className="lg:mt-2 lg:w-3/5 lg:text-left">
       <MainTitle title="Hola 👋🏻, soy Martín!" />
 
       <p className="mb-6 mt-4 text-lg font-semibold lg:text-2xl">
