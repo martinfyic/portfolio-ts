@@ -3,7 +3,7 @@ import { ReactNode } from "react";
 
 export const generateMetadata = async () => {
   return {
-    title: "Contacto | Martin Ferreira",
+    title: "Contacto",
     authors: [
       {
         name: "Martin Ferreira Yic",

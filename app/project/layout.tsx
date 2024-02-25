@@ -3,7 +3,7 @@ import { ReactNode } from "react";
 
 export const generateMetadata = async () => {
   return {
-    title: "Proyectos realizados | Martin Ferreira",
+    title: "Proyectos realizados",
     description: "Portfolio de Martin Ferreira Yic, Todos los proyectos",
     authors: [
       {
@@ -19,7 +19,7 @@ export const generateMetadata = async () => {
   };
 };
 
-export default function ProyectLayout({ children }: { children: ReactNode }) {
+export default function ProjectLayout({ children }: { children: ReactNode }) {
   return (
     <section className="mt-32">
       <PageNavbar />

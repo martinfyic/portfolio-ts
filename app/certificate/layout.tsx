@@ -3,7 +3,7 @@ import { ReactNode } from "react";
 
 export const generateMetadata = async () => {
   return {
-    title: `Certificados obtenidos | Martin Ferreira`,
+    title: "Certificados obtenidos",
     description: "Portfolio de Martin Ferreira Yic, Todos los certificados",
     authors: [
       {

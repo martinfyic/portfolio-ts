@@ -1,13 +1,13 @@
 import { FC } from "react";
 import Image from "next/image";
-import ProfilPic from "../../public/personal-foto.png";
+import ProfilePic from "../../public/personal-foto.png";
 
 export const HeroImage: FC = () => {
   return (
-    <div className="md:mt-2 md:w-1/2">
+    <div className="fade-in md:mt-2 md:w-1/2">
       <Image
         alt="Foto de Martin Ferreira"
-        src={ProfilPic}
+        src={ProfilePic}
         priority
         sizes="100vw"
         style={{

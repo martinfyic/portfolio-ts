@@ -7,7 +7,7 @@ export const generateMetadata = async ({
   params: { slug: string };
 }) => {
   return {
-    title: "Sobre Mi | Martin Ferreira",
+    title: "Sobre Mi",
     authors: [
       {
         name: "Martin Ferreira Yic",

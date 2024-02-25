@@ -4,19 +4,19 @@ import NextLink from "next/link";
 
 import { BsArrowUpRightSquare } from "react-icons/bs";
 
-import { ICertificate } from "@/interfaces";
+import { IProject } from "@/interfaces";
 
-interface CourseCardProps {
-  course: ICertificate;
+interface AllProjectsDetailProps {
+  project: IProject;
 }
 
-export const AllCourseCard: FC<CourseCardProps> = ({ course }) => {
-  const { image, name, slug } = course;
+export const AllProjectsDetail: FC<AllProjectsDetailProps> = ({ project }) => {
+  const { image, name, slug } = project;
   return (
     <div className="p-4">
       <NextLink
-        href={`/certificate/${slug}`}
-        aria-label={`Navigate to ${name} course`}
+        href={`/project/${slug}`}
+        aria-label="Navigate to project selected page"
       >
         <Image
           src={image}

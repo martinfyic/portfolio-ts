@@ -5,9 +5,8 @@ import NextLink from "next/link";
 import { RiMoonFill, RiSunLine } from "react-icons/ri";
 import { IoMdMenu, IoMdClose } from "react-icons/io";
 
-import { Logo } from "@/components";
 import { useActivClass, useDarkMode } from "@/hooks";
-import { useEffect, useState } from "react";
+import { logo } from "@/config/fonts";
 
 interface NavItem {
   label: string;
@@ -34,12 +33,6 @@ const NAV_ITEMS: NavItem[] = [
 ];
 
 export const HomeNavbar = () => {
-  const [mounted, setMounted] = useState(false);
-
-  useEffect(() => {
-    setMounted(true);
-  }, []);
-
   const {
     currentTheme,
     handleDarkTheme,
@@ -60,7 +53,9 @@ export const HomeNavbar = () => {
               className="cursor-pointer lg:block"
               aria-label="home button"
             >
-              {mounted && <Logo currentTheme={currentTheme} />}
+              <p
+                className={`text-xl font-semibold dark:text-primary ${logo.className}`}
+              >{`<MFY />`}</p>
             </NextLink>
             <div className="lg:hidden">
               <button onClick={handleNavbarButton} aria-label="menu button">

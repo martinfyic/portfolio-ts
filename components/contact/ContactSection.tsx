@@ -4,7 +4,7 @@ import { SubTitleSection } from "../ui";
 
 export const ContactSection = () => {
   return (
-    <section id="contact" className="body-font relative">
+    <section id="contact" className="body-font fade-in relative">
       <div className="container mx-auto px-5 py-24 lg:my-24">
         <div className="mb-12 flex w-full flex-col text-center">
           <SubTitleSection text="Contacto ✉️" />

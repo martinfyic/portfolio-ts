@@ -1,4 +1,5 @@
 import { FC } from "react";
+import { titleFont } from "@/config/fonts";
 
 interface Props {
   text: string;
@@ -13,7 +14,7 @@ export const SubTitleSection: FC<Props> = ({
 }) => {
   return (
     <h2
-      className={`mb-12 mt-6 text-center text-4xl font-bold md:text-6xl ${styleSubTitle}`}
+      className={`mb-12 mt-6 text-center text-4xl font-bold md:text-6xl ${styleSubTitle} ${titleFont.className}`}
     >
       {text}
       <hr

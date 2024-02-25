@@ -1,18 +1,18 @@
 import { ReactNode } from "react";
 import { Metadata } from "next";
-import { Analytics } from '@vercel/analytics/react';
+import { Analytics } from "@vercel/analytics/react";
 
 import { Footer } from "@/components";
 import { Providers } from "./providers";
 import "react-toastify/dist/ReactToastify.css";
 import "../styles/globals.css";
-
-import { Inter } from "next/font/google";
-
-const inter = Inter({ subsets: ["latin"] });
+import { inter } from "@/config/fonts";
 
 export const metadata: Metadata = {
-  title: "Martin Ferreira | Programador Web Full Stack",
+  title: {
+    template: "%s | Martin Ferreira Programador Web Full Stack",
+    default: "Martin Ferreira | Programador Web Full Stack",
+  },
   description:
     "Portfolio de Martin Ferreira Yic, Programador Web Full Stack, stack MERN, Next.js, CSS, HTML",
   keywords:
@@ -28,7 +28,7 @@ export const metadata: Metadata = {
     apple: ["/apple-touch-icon.png?v=4"],
     shortcut: ["apple-touch-icon.png"],
   },
-  metadataBase: new URL("http://localhost:3000/"),
+  metadataBase: new URL("https://www.martin-ferreira.com"),
   openGraph: {
     title: "Martin Ferreira | Programador Web Full Stack",
     description: "Portfolio de Martin Ferreira Yic, Programador Web Full Stack",

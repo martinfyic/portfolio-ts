@@ -1,9 +1,13 @@
 import Image from "next/image";
 
+import { titleFont } from "@/config/fonts";
+
 const AboutPage = () => {
   return (
-    <section className="flex  h-auto flex-col items-center">
-      <h1 className="mb-16 text-center text-4xl font-bold md:text-6xl">
+    <section className="fade-in  flex h-auto flex-col items-center">
+      <h1
+        className={`mb-16 text-center text-4xl font-bold md:text-6xl ${titleFont.className}`}
+      >
         Sobre Mi
       </h1>
       <article className="m-auto max-w-3xl text-pretty p-2 md:text-xl lg:max-w-4xl">
