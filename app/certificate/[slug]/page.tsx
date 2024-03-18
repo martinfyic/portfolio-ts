@@ -29,18 +29,18 @@ export const generateMetadata = async ({
 
   return {
     title: `Certificado ${certificate.name} | Martin Ferreira`,
+    description: certificate.description,
     authors: [
       {
         name: "Martin Ferreira Yic",
         url: "https://www.linkedin.com/in/martin-ferreira-yic/",
       },
     ],
-    icons: [
-      {
-        rel: "icon",
-        url: "data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>👨🏻‍💻</text></svg>",
-      },
-    ],
+    icons: {
+      icon: ["/favicon.ico?v=4"],
+      apple: ["/apple-touch-icon.png?v=4"],
+      shortcut: ["apple-touch-icon.png"],
+    },
   };
 };
 
