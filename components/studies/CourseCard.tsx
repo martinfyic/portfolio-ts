@@ -22,7 +22,11 @@ export const CourseCard: React.FC<CourseCardProps> = ({ course }) => {
         />
       </NextLink>
       <div className="p-4">
-        <h3 className="mb-1 text-sm font-semibold md:text-xl">{name}</h3>
+        <NextLink href={`certificate/${slug}`}>
+          <h3 className="mb-1 text-sm font-semibold hover:underline md:text-xl">
+            {name}
+          </h3>
+        </NextLink>
       </div>
     </div>
   );
