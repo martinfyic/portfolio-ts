@@ -12,6 +12,9 @@ export const StudiesSection = () => {
   return (
     <section id="certificates" className="my-8 py-16">
       <SubTitleSection text="Certificados 🎓" />
+      <p className="my-4 text-center text-lg font-semibold">
+        Algunos de los certificados que he obtenido son los siguientes:
+      </p>
       <div className="grid grid-cols-2 place-content-center place-items-center gap-4 md:grid-cols-2">
         {firstFourCertificate.map((course) => (
           <CourseCard key={course.slug} course={course} />
