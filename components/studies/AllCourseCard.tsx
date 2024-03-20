@@ -2,8 +2,6 @@ import { FC } from "react";
 import Image from "next/image";
 import NextLink from "next/link";
 
-import { BsArrowUpRightSquare } from "react-icons/bs";
-
 import { ICertificate } from "@/interfaces";
 
 interface CourseCardProps {
@@ -28,10 +26,14 @@ export const AllCourseCard: FC<CourseCardProps> = ({ course }) => {
         />
       </NextLink>
 
-      <h2 className="my-3 p-2 text-center text-sm font-semibold md:text-lg">
-        {name}
-        <hr className="mx-auto my-4 h-1 w-20 rounded border-0 bg-primary" />
-      </h2>
+      <NextLink
+        href={`/certificate/${slug}`}
+        aria-label={`Navigate to ${name} course`}
+      >
+        <h2 className="my-3 p-2 text-center text-sm font-semibold hover:underline md:text-lg">
+          {name}
+        </h2>
+      </NextLink>
     </div>
   );
 };

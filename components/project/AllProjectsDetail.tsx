@@ -2,8 +2,6 @@ import { FC } from "react";
 import Image from "next/image";
 import NextLink from "next/link";
 
-import { BsArrowUpRightSquare } from "react-icons/bs";
-
 import { IProject } from "@/interfaces";
 
 interface AllProjectsDetailProps {
@@ -28,10 +26,14 @@ export const AllProjectsDetail: FC<AllProjectsDetailProps> = ({ project }) => {
         />
       </NextLink>
 
-      <h2 className="my-3 p-2 text-center text-sm font-semibold md:text-lg">
-        {name}
-        <hr className="mx-auto my-4 h-1 w-20 rounded border-0 bg-primary" />
-      </h2>
+      <NextLink
+        href={`/project/${slug}`}
+        aria-label="Navigate to project selected page"
+      >
+        <h2 className="my-3 p-2 text-center text-sm font-semibold transition-all duration-300 hover:underline md:text-lg">
+          {name}
+        </h2>
+      </NextLink>
     </div>
   );
 };
