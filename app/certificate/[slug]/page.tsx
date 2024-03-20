@@ -82,15 +82,15 @@ const CertificatePage = async ({ params }: { params: { slug: string } }) => {
       </h2>
       <div className="my-3 flex flex-col items-start justify-start gap-3 font-semibold text-gray-700 dark:text-slate-400 md:flex-row md:items-center md:justify-around">
         <p>Fecha obtención: {dateFinished}</p>
-        <p>Semanas: {courseWeeks}</p>
-        <p>Horas curso: {courseHours}</p>
+
         <div className="flex flex-row items-center gap-2">
-          <p>Url certificado</p>
           <NextLink
             href={url}
             target="_blank"
             aria-label={`Navigate to course ${name}`}
+            className="flex flex-row items-center justify-center gap-1"
           >
+            <p className="hover:underline">Url certificado</p>
             <BiWorld
               size={20}
               className="cursor-pointer transition-transform hover:-translate-y-1"
@@ -98,12 +98,13 @@ const CertificatePage = async ({ params }: { params: { slug: string } }) => {
           </NextLink>
         </div>
         <div className="flex flex-row items-center gap-2">
-          <p>Realizado en {place} </p>
           <NextLink
             href={linkCurso}
             target="_blank"
             aria-label={`Navigate to course ${name}`}
+            className="flex flex-row items-center justify-center gap-1"
           >
+            <p className="hover:underline">Realizado en {place} </p>
             <BiWorld
               size={20}
               className="cursor-pointer transition-transform hover:-translate-y-1"
@@ -111,7 +112,7 @@ const CertificatePage = async ({ params }: { params: { slug: string } }) => {
           </NextLink>
         </div>
       </div>
-      <p className="text-pretty">{description}</p>
+      <p className="md:m-3 md:text-pretty">{description}</p>
     </main>
   );
 };
