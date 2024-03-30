@@ -7,30 +7,24 @@ import { Providers } from "./providers";
 import "react-toastify/dist/ReactToastify.css";
 import "../styles/globals.css";
 import { inter } from "@/config/fonts";
+import { siteConfig } from "@/config/site";
 
 export const metadata: Metadata = {
   title: {
     template: "%s | Martin Ferreira Programador Web Full Stack",
-    default: "Martin Ferreira | Programador Web Full Stack",
+    default: siteConfig.default,
   },
-  description:
-    "Portfolio de Martin Ferreira Yic, Programador Web Full Stack, stack MERN, Next.js, CSS, HTML",
-  keywords:
-    "JavaScript, TypeScript, React, Next.js, Astro, Node, HTML, CSS, Developer, Full Stack, MERN, Express",
+  description: siteConfig.description,
+  keywords: siteConfig.keywords,
   authors: [
     {
-      name: "Martin Ferreira Yic",
-      url: "https://www.linkedin.com/in/martin-ferreira-yic/",
+      name: siteConfig.author,
+      url: siteConfig.links.linkedin,
     },
   ],
-  icons: {
-    icon: ["/favicon.ico?v=4"],
-    apple: ["/apple-touch-icon.png?v=4"],
-    shortcut: ["apple-touch-icon.png"],
-  },
-  metadataBase: new URL("https://www.martin-ferreira.com"),
+  metadataBase: new URL(process.env.NEXT_PUBLIC_APP_URL ?? siteConfig.url),
   openGraph: {
-    title: "Martin Ferreira | Programador Web Full Stack",
+    title: siteConfig.default,
     description: "Portfolio de Martin Ferreira Yic, Programador Web Full Stack",
     images: [
       {

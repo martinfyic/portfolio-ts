@@ -24,7 +24,7 @@ export const projects: IProject[] = [
     name: "H.D.P Burguer",
     description:
       "Este es mi segundo proyecto Front-End y mi primero con React Js. Se trata de un e-commerce ficticio realizado para el tercer curso de Coderhouse; completando así la carrera de Front-End. Es posible ampliar el detalle de cada producto sin recargar la página utilizando el routing de React. A partir de ahí, estos se pueden agregar al carrito. En la vista del carrito, se pueden eliminar artículos y hay un formulario de compra. Luego, la información se sube a firebase.",
-    image: "/web-images/burguer-react-proyect.webp",
+    image: "/web-images/burguer-react-project.webp",
     github: "https://github.com/martinfyic/app-hamburguesas-reactjs.git",
     link: "https://proyecto-reactjs-martin.netlify.app/",
     slug: "hdp-burguer",

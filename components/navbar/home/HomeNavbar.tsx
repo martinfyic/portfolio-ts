@@ -7,6 +7,7 @@ import { IoMdMenu, IoMdClose } from "react-icons/io";
 
 import { useActivClass, useDarkMode } from "@/hooks";
 import { logo } from "@/config/fonts";
+import { Icon } from "@/components";
 
 interface NavItem {
   label: string;
@@ -53,9 +54,7 @@ export const HomeNavbar = () => {
               className="cursor-pointer lg:block"
               aria-label="home button"
             >
-              <p
-                className={`text-xl font-semibold dark:text-primary ${logo.className}`}
-              >{`<MFY />`}</p>
+              <Icon.logo className="h-8 w-8 hover:text-orange-300" />
             </NextLink>
             <div className="lg:hidden">
               <button onClick={handleNavbarButton} aria-label="menu button">

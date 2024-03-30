@@ -1,4 +1,4 @@
-import NextLink from "next/link";
+import { siteConfig } from "@/config/site";
 import {
   AiOutlineGithub,
   AiOutlineLinkedin,
@@ -16,28 +16,30 @@ export const Footer = () => {
           &#169; {actualYear} Martin Ferreira 👋
         </div>
         <div className="mb-2 flex flex-row items-center justify-center space-x-2">
-          <NextLink
-            href="https://github.com/martinfyic"
+          <a
+            href={siteConfig.links.github}
             target="_blank"
             aria-label="Personal github"
+            rel="noreferrer"
           >
             <AiOutlineGithub
               size={30}
               className="cursor-pointer transition-transform hover:-translate-y-1"
             />
-          </NextLink>
-          <NextLink
-            href="https://www.linkedin.com/in/martin-ferreira-yic/"
+          </a>
+          <a
+            href={siteConfig.links.linkedin}
             target="_blank"
             aria-label="Navigate to personal linkedin"
+            rel="noreferrer"
           >
             <AiOutlineLinkedin
               size={30}
               className="cursor-pointer transition-transform hover:-translate-y-1"
             />
-          </NextLink>
-          <NextLink
-            href="mailto:martin.f.yic@gmail.com"
+          </a>
+          <a
+            href={`mailto:${siteConfig.mail}`}
             target="_blank"
             aria-label="Personal email"
           >
@@ -45,7 +47,7 @@ export const Footer = () => {
               size={30}
               className="cursor-pointer transition-transform hover:-translate-y-1"
             />
-          </NextLink>
+          </a>
         </div>
       </div>
     </footer>
