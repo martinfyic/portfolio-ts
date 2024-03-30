@@ -2,13 +2,23 @@ import { IProject } from "@/interfaces";
 
 export const projects: IProject[] = [
   {
+    name: "CodeZen Blog",
+    description:
+      "En mi blog, compartiré desafíos y soluciones en mi trayectoria como programador full stack, con la esperanza de ayudar a otros y demostrar mis conocimientos adquiridos.",
+    image:
+      "https://codezen-blog.vercel.app/opengraph-image.png?415dad4c11cd1be6",
+    github: "https://github.com/martinfyic/my-blog.git",
+    link: "https://codezen-blog.vercel.app/blog",
+    slug: "codezen-blog",
+  },
+  {
     name: "Backend Ecommerce NodeJs",
     description:
       "El proyecto final del curso de Backend en Coderhouse consistió en el desarrollo de un backend para una aplicación de e-commerce, con el objetivo de ofrecer a los usuarios la posibilidad de comprar y vender productos en línea de manera sencilla y segura.",
-    image: "/web-images/ecommer-nodejs-proyect.webp",
+    image: "/web-images/ecommer-nodejs-project.webp",
     github: "https://github.com/martinfyic/proyecto-nodejs-ecommerce.git",
     link: "https://proyecto-nodejs-ecommerce.onrender.com/",
-    slug: "backend-ecommers-nodeJs",
+    slug: "backend-ecommers-nodejs",
   },
   {
     name: "H.D.P Burguer",
@@ -20,12 +30,12 @@ export const projects: IProject[] = [
     slug: "hdp-burguer",
   },
   {
-    name: "Zara Proyect ",
+    name: "Zara Project ",
     description:
       "Este proyecto fue realizado durante el curso de Javascript en Coderhouse, es mi primer proyecto donde aprendi JS. La consigna fue generar un ecommers donde se aplicaran la mayor cantidad de conceptos aprendidos en el curso.",
-    image: "/web-images/zara-js-proyect.webp",
+    image: "/web-images/zara-js-project.webp",
     github: "https://github.com/martinfyic/simulador-ecommerce-jsvanilla.git",
     link: "https://simulador-ecommerce-js.netlify.app/",
-    slug: "zara-proyect-js-vanilla",
+    slug: "zara-project-js-vanilla",
   },
 ];
