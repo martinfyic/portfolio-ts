@@ -8,7 +8,7 @@ export const projects: IProject[] = [
     image:
       "https://codezen-blog.vercel.app/opengraph-image.png?415dad4c11cd1be6",
     github: "https://github.com/martinfyic/my-blog.git",
-    link: "https://codezen-blog.vercel.app/blog",
+    link: "https://codezen-blog.vercel.app",
     slug: "codezen-blog",
   },
   {
