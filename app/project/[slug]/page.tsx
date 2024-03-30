@@ -53,7 +53,7 @@ const ProjectPage = async ({ params }: { params: { slug: string } }) => {
   const { description, image, name, github, link } = data;
 
   return (
-    <main className="mx-auto mt-32 max-w-3xl px-4 sm:px-6 md:max-w-5xl">
+    <main className="mx-auto mt-32 h-dvh max-w-3xl px-4 sm:px-6 md:max-w-5xl">
       <h1 className="mb-12 text-center text-4xl font-bold md:text-6xl">
         {name}
       </h1>
@@ -71,34 +71,34 @@ const ProjectPage = async ({ params }: { params: { slug: string } }) => {
         <hr className="mx-auto my-4 h-1 w-20 rounded border-0 bg-primary" />
       </h2>
       <div className="my-3 flex flex-row items-center justify-around gap-3 font-semibold text-gray-700 dark:text-slate-400">
-        <div className="flex flex-row items-center gap-2">
-          <p>Github </p>
-          <NextLink
-            href={github}
-            target="_blank"
-            aria-label={`Navigate to course github project ${name}`}
-          >
-            <BsGithub
-              size={20}
-              className="cursor-pointer transition-transform hover:-translate-y-1"
-            />
-          </NextLink>
-        </div>
-        <div className="flex flex-row items-center gap-2">
-          <p>Site </p>
-          <NextLink
-            href={link}
-            target="_blank"
-            aria-label={`Navigate to url project ${name}`}
-          >
-            <BiWorld
-              size={20}
-              className="cursor-pointer transition-transform hover:-translate-y-1"
-            />
-          </NextLink>
-        </div>
+        <NextLink
+          href={github}
+          target="_blank"
+          aria-label={`Navigate to course github project ${name}`}
+          className="flex flex-row items-center gap-2"
+        >
+          <p className="hover:underline">Github </p>
+          <BsGithub
+            size={20}
+            className="cursor-pointer transition-transform hover:-translate-y-1"
+          />
+        </NextLink>
+        <NextLink
+          href={link}
+          target="_blank"
+          aria-label={`Navigate to url project ${name}`}
+          className="flex flex-row items-center gap-2"
+        >
+          <p className="hover:underline">Site </p>
+          <BiWorld
+            size={20}
+            className="cursor-pointer transition-transform hover:-translate-y-1"
+          />
+        </NextLink>
       </div>
-      <p>{description}</p>
+      <div className="mx-auto mt-10 max-w-4xl">
+        <p className="text-balance text-center text-lg">{description}</p>
+      </div>
     </main>
   );
 };
