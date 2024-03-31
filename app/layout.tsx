@@ -34,6 +34,9 @@ export const metadata: Metadata = {
       },
     ],
   },
+  verification: {
+    google: siteConfig.verification.google,
+  },
 };
 
 export const viewport: Viewport = {

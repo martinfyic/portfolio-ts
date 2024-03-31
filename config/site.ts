@@ -36,4 +36,7 @@ export const siteConfig = {
   },
   url: "https://www.martin-ferreira.com",
   mail: "martin.f.yic@gmail.com",
+  verification: {
+    google: "-DJdilV6UgRDNbs6BKKyIYeO62gitX7Hqd9oYyu-vNA",
+  },
 };
