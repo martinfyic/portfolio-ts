@@ -1,20 +1,15 @@
 import Image from "next/image";
 
-import {
-  FaHtml5,
-  FaCss3Alt,
-  FaReact,
-  FaNodeJs,
-  FaBootstrap,
-} from "react-icons/fa";
+import { FaHtml5, FaCss3Alt, FaReact, FaNodeJs } from "react-icons/fa";
 import {
   SiJavascript,
   SiNextdotjs,
   SiMongodb,
   SiTailwindcss,
-  SiGithub,
   SiTypescript,
   SiExpress,
+  SiNestjs,
+  SiPostgresql,
 } from "react-icons/si";
 import { BsGit } from "react-icons/bs";
 
@@ -30,11 +25,11 @@ const skills: ISkill[] = [
   { skill: "Next JS", icon: <SiNextdotjs size={"2rem"} /> },
   { skill: "Node JS", icon: <FaNodeJs size={"2rem"} /> },
   { skill: "Express", icon: <SiExpress size={"2rem"} /> },
+  { skill: "Nest JS", icon: <SiNestjs size={"2rem"} /> },
   { skill: "Tailwind CSS", icon: <SiTailwindcss size={"2rem"} /> },
-  { skill: "Bootstrap", icon: <FaBootstrap size={"2rem"} /> },
   { skill: "Mongo DB", icon: <SiMongodb size={"2rem"} /> },
+  { skill: "Postgresql", icon: <SiPostgresql size={"2rem"} /> },
   { skill: "Git", icon: <BsGit size={"2rem"} /> },
-  { skill: "GitHub", icon: <SiGithub size={"2rem"} /> },
 ];
 
 export const SkillSection = () => {
@@ -46,7 +41,7 @@ export const SkillSection = () => {
           return (
             <li
               key={idx}
-              className="mr-2 mt-2 flex cursor-pointer items-center justify-center gap-2 rounded bg-primary px-2 py-2 text-sm font-semibold text-white/90 md:px-4 md:text-lg"
+              className="mr-2 mt-2 flex items-center justify-center gap-2 rounded bg-primary px-2 py-2 text-sm font-semibold text-white/90 md:px-4 md:text-lg"
             >
               {icon}
 
