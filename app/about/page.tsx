@@ -1,6 +1,7 @@
 import Image from "next/image";
 
 import { titleFont } from "@/config/fonts";
+import { ProfileImage } from "@/components/about/ProfileImage";
 
 const AboutPage = () => {
   return (
@@ -10,6 +11,7 @@ const AboutPage = () => {
       >
         Sobre Mi
       </h1>
+      <ProfileImage />
       <article className="m-auto max-w-3xl text-pretty p-2 md:text-xl lg:max-w-4xl">
         <p className="mb-6 text-pretty">
           Saludos, me llamo{" "}

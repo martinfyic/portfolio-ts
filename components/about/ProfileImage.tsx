@@ -2,9 +2,9 @@ import { FC } from "react";
 import Image from "next/image";
 import ProfilePic from "../../public/personal-foto.png";
 
-export const HeroImage: FC = () => {
+export const ProfileImage: FC = () => {
   return (
-    <div className="fade-in md:mt-2 md:w-1/2">
+    <div className="fade-in mb-10 flex items-center justify-center">
       <Image
         alt="Foto de Martin Ferreira"
         src={ProfilePic}
