@@ -3,7 +3,7 @@ export const siteConfig = {
   default: "Martin Ferreira | Programador Web Full Stack",
   author: "Martín Ferreira Yic",
   description:
-    "Portfolio de Martin Ferreira Yic, Programador Web Full Stack, stack MERN, Next.js, CSS, HTML",
+    "Soy Martin Ferreira Yic, un Programador Web Full Stack. En mi portafolio, encontrarás una variedad de proyectos que reflejan mi pasión por crear soluciones web innovadoras y eficientes. Te invito a explorar mi trabajo y descubrir cómo combino mis habilidades técnicas y creativas para ofrecer experiencias digitales de calidad superior.",
   keywords: [
     "martin",
     "martín",
