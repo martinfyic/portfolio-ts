@@ -37,6 +37,16 @@ export const metadata: Metadata = {
   verification: {
     google: siteConfig.verification.google,
   },
+  alternates: {
+    canonical: "/",
+    languages: {
+      "es-ES": "/es-ES",
+    },
+  },
+  robots: {
+    follow: true,
+    index: true,
+  },
 };
 
 export const viewport: Viewport = {
