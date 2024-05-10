@@ -22,6 +22,7 @@ export const metadata: Metadata = {
       url: siteConfig.links.linkedin,
     },
   ],
+  publisher: siteConfig.author,
   metadataBase: new URL(process.env.NEXT_PUBLIC_APP_URL ?? siteConfig.url),
   openGraph: {
     title: siteConfig.default,
