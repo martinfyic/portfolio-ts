@@ -4,7 +4,7 @@ import { MainTitle } from "../ui";
 
 export const HeroDetail: FC = () => {
   return (
-    <div className="fade-in lg:mt-2 lg:w-3/5 lg:text-left">
+    <div className="fade-in mt-5 flex flex-col items-center justify-center py-8">
       <MainTitle title="Hola 👋🏻, soy Martín!" />
 
       <p className="mb-6 mt-4 text-lg font-semibold lg:text-2xl">

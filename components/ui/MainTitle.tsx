@@ -7,7 +7,7 @@ interface Props {
 
 export const MainTitle: FC<Props> = ({ title, style }) => {
   return (
-    <h1 className={`mt-6 text-4xl font-bold lg:mt-0 lg:text-6xl ${style}`}>
+    <h1 className={`mb-2 mt-6 text-5xl font-bold lg:mt-2 lg:text-7xl ${style}`}>
       {title}
     </h1>
   );

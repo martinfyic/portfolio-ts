@@ -6,7 +6,6 @@ import { RiMoonFill, RiSunLine } from "react-icons/ri";
 import { IoMdMenu, IoMdClose } from "react-icons/io";
 
 import { useActivClass, useDarkMode } from "@/hooks";
-import { logo } from "@/config/fonts";
 import { Icon } from "@/components";
 
 interface NavItem {
