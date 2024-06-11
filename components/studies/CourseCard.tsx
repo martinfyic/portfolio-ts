@@ -12,14 +12,14 @@ export const CourseCard: React.FC<CourseCardProps> = ({ course }) => {
 
   return (
     <div className="m-4 flex w-36 flex-col items-center justify-center overflow-hidden rounded-lg align-middle md:w-80">
-      <picture className="rounded-md bg-gradient-to-r from-orange-300 to-orange-400 p-4">
+      <picture className="rounded-md bg-gradient-to-tl from-primary via-purple-400 to-pink-400 p-4">
         <NextLink href={`certificate/${slug}`}>
           <Image
             src={image}
             alt={name}
             width={300}
             height={300}
-            className="duration-300 hover:scale-105"
+            className="duration-300 hover:scale-95"
           />
         </NextLink>
       </picture>
