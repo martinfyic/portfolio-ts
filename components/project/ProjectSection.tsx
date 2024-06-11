@@ -17,7 +17,7 @@ export const ProjectSection = () => {
             return (
               <div key={idx}>
                 <div className="flex flex-col md:flex-row md:space-x-12">
-                  <picture className="mb-4 md:w-1/2">
+                  <picture className="mb-4 rounded-md bg-gradient-to-bl from-primary via-purple-400 to-pink-400 p-6 md:w-1/2">
                     <NextLink
                       href={`/project/${slug}`}
                       className="cursor-pointer"
@@ -29,7 +29,7 @@ export const ProjectSection = () => {
                         width={1000}
                         height={1000}
                         priority
-                        className="rounded-xl shadow-xl hover:opacity-70"
+                        className="shadow-xl duration-300 hover:scale-95"
                       />
                     </NextLink>
                   </picture>
