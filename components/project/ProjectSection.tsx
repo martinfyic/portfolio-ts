@@ -17,7 +17,7 @@ export const ProjectSection = () => {
             return (
               <div key={idx}>
                 <div className="flex flex-col md:flex-row md:space-x-12">
-                  <picture className="mb-4 rounded-md bg-gradient-to-r from-orange-300 to-orange-400 p-6 md:w-1/2">
+                  <picture className="mb-4 rounded-md bg-gradient-to-tl from-orange-300 to-orange-400 p-6 md:w-1/2">
                     <NextLink
                       href={`/project/${slug}`}
                       className="cursor-pointer"
