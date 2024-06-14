@@ -67,6 +67,21 @@ export const certificate: ICertificate[] = [
     courseWeeks: 9,
   },
   {
+    name: "Nest: Desarrollo backend escalable con Node",
+    slug: "nest-desarrollo-backend-escalable-con-node",
+    url: "https://www.udemy.com/share/106Osu3@D0BoQ1UM0tlH01g0uJmHPmauk_OXxVmlUHc4EFHrI3K-fRkh9o3mnlGPIids78Xb9Q==/",
+    image:
+      "https://udemy-certificate.s3.amazonaws.com/image/UC-101d9afa-6848-4a47-aac2-87ee50c49b7d.jpg?v=1717458346000",
+    description:
+      "En este curso de NestJS, adquirí habilidades fundamentales para construir aplicaciones robustas y escalables con este framework.\n\nAprendí a crear y gestionar servicios, controladores, módulos y proveedores, así como a utilizar decoradores y guardias para proteger rutas y servicios.\n\nImplementé autenticación y autorización basadas en roles con JWTs, manejé transacciones de base de datos usando TypeORM, y configuré tanto Postgres como MongoDB.\n\nAdemás, trabajé con Docker para la contenedorización y despliegue de aplicaciones.\n\nTambién exploré el ciclo de vida de una petición, la validación y transformación de datos, y la creación de endpoints RESTful.\n\nUtilicé principios SOLID para escribir código limpio y mantenible, y generé documentación automática y semi-automática para las APIs.\n\nEn resumen, este curso me preparó para desarrollar aplicaciones completas y de alta calidad con NestJS, siguiendo las mejores prácticas y utilizando tecnologías modernas.",
+    dateFinished: "03/06/2024",
+    linkCurso: "https://www.udemy.com/course/solid-clean/?kw=clean&src=sac",
+    place: "Udemy Business",
+    type: "course",
+    courseHours: 25,
+    courseWeeks: 5,
+  },
+  {
     name: "Programación Backend",
     slug: "programacion-backend",
     url: "https://www.coderhouse.com/certificados/644187e006739a0002c80904",
