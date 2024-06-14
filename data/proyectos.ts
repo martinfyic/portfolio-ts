@@ -16,7 +16,7 @@ export const projects: IProject[] = [
     description:
       "El proyecto final del curso de Backend en Coderhouse consistió en el desarrollo de un backend para una aplicación de e-commerce, con el objetivo de ofrecer a los usuarios la posibilidad de comprar y vender productos en línea de manera sencilla y segura.",
     image:
-      "https://res.cloudinary.com/dtweirsya/image/upload/v1718403304/porfolio/proyectos/ecommer-nodejs-project_sl9fay.webp",
+      "https://res.cloudinary.com/dtweirsya/image/upload/v1718404685/porfolio/proyectos/ecommer-nodejs-project_sl9fay.webp",
     github: "https://github.com/martinfyic/proyecto-nodejs-ecommerce.git",
     link: "https://proyecto-nodejs-ecommerce.onrender.com/",
     slug: "backend-ecommers-nodejs",
