@@ -62,7 +62,7 @@ const CertificatePage = async ({ params }: { params: { slug: string } }) => {
   } = data;
 
   return (
-    <main className="mx-auto mt-32 max-w-3xl px-4 sm:px-6 md:max-w-5xl">
+    <main className="fade-in mx-auto mt-32 max-w-3xl px-4 sm:px-6 md:max-w-5xl">
       <h1 className="mb-12 text-center text-4xl font-bold md:text-6xl">
         {name}
       </h1>
