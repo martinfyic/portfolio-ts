@@ -7,7 +7,7 @@ import { certificate } from "@/data";
 import { SubTitleSection } from "../ui";
 
 export const StudiesSection = () => {
-  const firstFourCertificate = certificate.slice(0, 4);
+  const firstFourCertificate = certificate.slice(0, 6);
 
   return (
     <section id="certificates" className="my-8 py-16">
