@@ -86,13 +86,6 @@ const AboutPage = () => {
           para mi crecimiento profesional a largo plazo.
         </p>
       </article>
-      <Image
-        src="/logo_primary.png"
-        alt="Logo Martin Ferreira"
-        width={300}
-        height={300}
-        className="lg:my16 my-8"
-      />
     </section>
   );
 };
