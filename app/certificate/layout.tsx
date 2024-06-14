@@ -1,5 +1,5 @@
-import { PageNavbar } from "@/components";
 import { ReactNode } from "react";
+import { PageNavbar } from "@/components";
 
 export const generateMetadata = async () => {
   return {

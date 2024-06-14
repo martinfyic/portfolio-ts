@@ -8,20 +8,23 @@ export const HeroDetail: FC = () => {
       <MainTitle title="Hola 👋🏻, soy Martín!" />
 
       <p className="mb-6 mt-4 text-lg font-semibold lg:text-2xl">
-        Programador Web <span className="text-primary">Full Stack</span> en
-        Montevideo, UY.
+        Programador Web{" "}
+        <span className="bg-gradient-to-r from-pink-500 via-primary to-violet-500 bg-clip-text text-transparent lg:text-3xl">
+          Full Stack
+        </span>{" "}
+        en Montevideo, UY.
       </p>
       <div className="flex items-center justify-center gap-3 lg:justify-start">
         <NextLink
           href="#projects"
-          className="cursor-pointer rounded bg-primary px-6 py-3 font-semibold text-light shadow transition-transform hover:-translate-y-1 hover:bg-primary/80"
+          className="cursor-pointer rounded border-2 border-black bg-gradient-to-tl from-primary via-purple-500 to-pink-500 px-6 py-3 font-semibold text-light shadow-md transition-transform hover:-translate-y-1"
           aria-label="Navigate to projects section"
         >
           Proyectos
         </NextLink>
         <NextLink
           href="#contact"
-          className="cursor-pointer rounded border-2 border-black bg-light px-6 py-3 font-semibold shadow transition-transform hover:-translate-y-1 dark:border-l dark:bg-darker"
+          className="cursor-pointer rounded border-2 border-black bg-light px-6 py-3 font-semibold shadow-md transition-transform hover:-translate-y-1 dark:border-l dark:border-white dark:bg-darker"
           aria-label="Navigate to contact section"
         >
           Contacto

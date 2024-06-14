@@ -57,14 +57,8 @@ const ProjectPage = async ({ params }: { params: { slug: string } }) => {
       <h1 className="mb-12 text-center text-4xl font-bold md:text-6xl">
         {name}
       </h1>
-      <picture className="mb-10 flex items-center justify-center">
-        <Image
-          src={image}
-          alt={name}
-          width={600}
-          height={600}
-          data-aos="zoom-in"
-        />
+      <picture className="mb-10 flex items-center justify-center ">
+        <Image src={image} alt={name} width={600} height={600} />
       </picture>
       <h2 className="mb-3 text-center text-2xl font-bold md:text-3xl">
         Resumen
