@@ -1,10 +1,22 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   images: {
-    domains: [
-      "codezen-blog.vercel.app",
-      "res.cloudinary.com",
-      "udemy-certificate.s3.amazonaws.com",
+    remotePatterns: [
+      {
+        protocol: "https",
+        hostname: "codezen-blog.vercel.app",
+        port: "",
+      },
+      {
+        protocol: "https",
+        hostname: "res.cloudinary.com",
+        port: "",
+      },
+      {
+        protocol: "https",
+        hostname: "udemy-certificate.s3.amazonaws.com",
+        port: "",
+      },
     ],
   },
 };

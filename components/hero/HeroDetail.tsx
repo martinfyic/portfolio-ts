@@ -10,7 +10,7 @@ export const HeroDetail: FC = () => {
       <p className="mb-6 mt-4 text-lg font-semibold lg:text-2xl">
         Programador Web{" "}
         <span className="bg-gradient-to-r from-pink-500 via-primary to-violet-500 bg-clip-text text-transparent lg:text-3xl">
-          Full Stack
+          Full Stack JS
         </span>{" "}
         en Montevideo, UY.
       </p>

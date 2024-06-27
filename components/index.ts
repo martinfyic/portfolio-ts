@@ -1,5 +1,4 @@
 export * from "./about";
-export * from "./background";
 export * from "./contact";
 export * from "./footer";
 export * from "./hero";
