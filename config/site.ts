@@ -1,9 +1,9 @@
 export const siteConfig = {
-  name: "Programador Web Full Stack",
-  default: "Martin Ferreira | Programador Web Full Stack",
+  name: "Programador Web Full Stack JS",
+  default: "Martin Ferreira | Programador Web Full Stack JS",
   author: "Martín Ferreira Yic",
   description:
-    "Soy Martin Ferreira Yic, un Programador Web Full Stack. En mi portafolio, proyectos que reflejan mi pasión por crear soluciones web. Te invito a explorar mi trabajo y descubrir cómo combino mis habilidades técnicas y creativas para ofrecer experiencias digitales de calidad superior.",
+    "Soy Martin Ferreira Yic, un Programador Web Full Stack JS. En mi portafolio, proyectos que reflejan mi pasión por crear soluciones web. Te invito a explorar mi trabajo y descubrir cómo combino mis habilidades técnicas y creativas para ofrecer experiencias digitales de calidad superior.",
   keywords: [
     "martin",
     "martín",
@@ -37,6 +37,6 @@ export const siteConfig = {
   url: "https://www.martin-ferreira.com",
   mail: "martin.f.yic@gmail.com",
   verification: {
-    google: "-DJdilV6UgRDNbs6BKKyIYeO62gitX7Hqd9oYyu-vNA",
+    google: `${process.env.GOOGLE_VERIFICATION}`,
   },
 };
