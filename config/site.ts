@@ -1,6 +1,6 @@
 export const siteConfig = {
   name: "Programador Web Full Stack JS",
-  default: "Martin Ferreira | Programador Web Full Stack JS",
+  default: "Martín Ferreira | Programador Web Full Stack JS",
   author: "Martín Ferreira Yic",
   description:
     "Soy Martin Ferreira Yic, un Programador Web Full Stack JS. En mi portafolio, proyectos que reflejan mi pasión por crear soluciones web. Te invito a explorar mi trabajo y descubrir cómo combino mis habilidades técnicas y creativas para ofrecer experiencias digitales de calidad superior.",
@@ -28,7 +28,7 @@ export const siteConfig = {
     "javascript",
     "reactjs",
     "nodejs",
-    "nextjs",
+    "nestjs",
   ],
   links: {
     linkedin: "https://www.linkedin.com/in/martin-ferreira-yic/",
