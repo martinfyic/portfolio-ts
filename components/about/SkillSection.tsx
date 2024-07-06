@@ -53,7 +53,8 @@ export const SkillSection = () => {
       <Image
         src="/skills-image.svg"
         priority
-        alt="Imagen representativa de Martin"
+        alt="Imagen representativa de Martín"
+        title="Imagen representativa de Martín"
         width={350}
         height={350}
         className="hidden md:relative md:bottom-0 md:left-24 md:z-0 md:block md:h-auto"

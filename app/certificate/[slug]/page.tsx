@@ -1,8 +1,5 @@
 import Image from "next/image";
-import NextLink from "next/link";
 import { redirect } from "next/navigation";
-
-import { BiWorld } from "react-icons/bi";
 
 import { getCertificateInfo, getPaths } from "@/helpers";
 import { certificate } from "@/data";
@@ -60,6 +57,7 @@ const CertificatePage = async ({ params }: { params: { slug: string } }) => {
         <Image
           src={image}
           alt={name}
+          title={name}
           width={600}
           height={600}
           data-aos="zoom-in"

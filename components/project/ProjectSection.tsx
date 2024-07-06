@@ -21,11 +21,13 @@ export const ProjectSection = () => {
                     <NextLink
                       href={`/project/${slug}`}
                       className="cursor-pointer"
-                      aria-label={`Navigate to project page ${name}`}
+                      aria-label={`Navegar a la pagina ${name}`}
+                      title={`Navegar a la pagina ${name}`}
                     >
                       <Image
                         src={image}
                         alt={name}
+                        title={`Imagen del proyecto ${name}`}
                         width={1000}
                         height={1000}
                         priority
