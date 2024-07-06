@@ -1,6 +1,6 @@
 import { FC } from "react";
 import NextLink from "next/link";
-import { MainTitle } from "../ui";
+import { DownLoadCvButton, MainTitle } from "../ui";
 
 export const HeroDetail: FC = () => {
   return (
@@ -14,21 +14,16 @@ export const HeroDetail: FC = () => {
         </span>{" "}
         en Montevideo, UY.
       </p>
-      <div className="flex items-center justify-center gap-3 lg:justify-start">
-        <NextLink
-          href="#projects"
-          className="cursor-pointer rounded border-2 border-black bg-gradient-to-tl from-primary via-purple-500 to-pink-500 px-6 py-3 font-semibold text-light shadow-md transition-transform hover:-translate-y-1"
-          aria-label="Navigate to projects section"
-        >
-          Proyectos
-        </NextLink>
+      <div className="flex flex-col items-center justify-center gap-3 md:flex-row lg:justify-start">
         <NextLink
           href="#contact"
           className="cursor-pointer rounded border-2 border-black bg-light px-6 py-3 font-semibold shadow-md transition-transform hover:-translate-y-1 dark:border-l dark:border-white dark:bg-darker"
-          aria-label="Navigate to contact section"
+          aria-label="Navegar a sección de contacto"
+          title="Navigate to contact section"
         >
           Contacto
         </NextLink>
+        <DownLoadCvButton />
       </div>
     </div>
   );
