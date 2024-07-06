@@ -61,6 +61,7 @@ const ProjectPage = async ({ params }: { params: { slug: string } }) => {
         <Image
           src={image}
           alt={name}
+          title={name}
           width={600}
           height={600}
           className="shadow-xl"
@@ -74,7 +75,8 @@ const ProjectPage = async ({ params }: { params: { slug: string } }) => {
         <NextLink
           href={github}
           target="_blank"
-          aria-label={`Navigate to course github project ${name}`}
+          aria-label={`Navegar al repositorio del proyecto ${name}`}
+          title={`Navegar al repositorio del proyecto ${name}`}
           className="flex flex-row items-center gap-2"
         >
           <p className="hover:underline">Github </p>
@@ -86,7 +88,8 @@ const ProjectPage = async ({ params }: { params: { slug: string } }) => {
         <NextLink
           href={link}
           target="_blank"
-          aria-label={`Navigate to url project ${name}`}
+          aria-label={`Navegar al proyecto ${name}`}
+          title={`Proyecto ${name}`}
           className="flex flex-row items-center gap-2"
         >
           <p className="hover:underline">Site </p>

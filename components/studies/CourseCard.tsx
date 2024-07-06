@@ -20,6 +20,7 @@ export const CourseCard: React.FC<CourseCardProps> = ({ course }) => {
             width={300}
             height={300}
             className="duration-300 hover:scale-95"
+            title={`Imagen del certificado ${name}`}
           />
         </NextLink>
       </picture>

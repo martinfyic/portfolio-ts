@@ -20,6 +20,7 @@ export const Footer = () => {
             href={siteConfig.links.github}
             target="_blank"
             aria-label="Personal github"
+            title="Personal github"
             rel="noreferrer"
           >
             <AiOutlineGithub
@@ -30,7 +31,8 @@ export const Footer = () => {
           <a
             href={siteConfig.links.linkedin}
             target="_blank"
-            aria-label="Navigate to personal linkedin"
+            aria-label="Navegar a mi Linkedin"
+            title="Navegar a mi Linkedin"
             rel="noreferrer"
           >
             <AiOutlineLinkedin
@@ -41,7 +43,8 @@ export const Footer = () => {
           <a
             href={`mailto:${siteConfig.mail}`}
             target="_blank"
-            aria-label="Personal email"
+            aria-label="Email personal"
+            title="Email personal"
           >
             <AiOutlineMail
               size={30}

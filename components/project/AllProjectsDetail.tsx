@@ -14,11 +14,13 @@ export const AllProjectsDetail: FC<AllProjectsDetailProps> = ({ project }) => {
     <div className="p-4">
       <NextLink
         href={`/project/${slug}`}
-        aria-label="Navigate to project selected page"
+        aria-label={`Navegar al proyecto ${name}`}
+        title={`Proyecto ${name}`}
       >
         <Image
           src={image}
-          alt={name}
+          alt={`Proyecto ${name}`}
+          title={`Proyecto ${name}`}
           width={400}
           height={400}
           className="fade-in rounded shadow-xl duration-300 hover:scale-105"
@@ -28,7 +30,8 @@ export const AllProjectsDetail: FC<AllProjectsDetailProps> = ({ project }) => {
 
       <NextLink
         href={`/project/${slug}`}
-        aria-label="Navigate to project selected page"
+        aria-label={`Navegar al proyecto ${name}`}
+        title={`Proyecto ${name}`}
       >
         <h2 className="my-3 p-2 text-center text-sm font-semibold transition-all duration-300 hover:underline md:text-lg">
           {name}

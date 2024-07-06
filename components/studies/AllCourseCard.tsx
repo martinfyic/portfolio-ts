@@ -14,11 +14,13 @@ export const AllCourseCard: FC<CourseCardProps> = ({ course }) => {
     <div className="p-4">
       <NextLink
         href={`/certificate/${slug}`}
-        aria-label={`Navigate to ${name} course`}
+        aria-label={`Ir a la pagina del curso de ${name}`}
+        title={`${name}`}
       >
         <Image
           src={image}
           alt={name}
+          title={name}
           width={400}
           height={400}
           className="fade-in rounded shadow-xl duration-300 hover:scale-105"
@@ -28,7 +30,8 @@ export const AllCourseCard: FC<CourseCardProps> = ({ course }) => {
 
       <NextLink
         href={`/certificate/${slug}`}
-        aria-label={`Navigate to ${name} course`}
+        aria-label={`Ir a la pagina del curso de ${name}`}
+        title={`${name}`}
       >
         <h2 className="my-3 p-2 text-center text-sm font-semibold hover:underline md:text-lg">
           {name}
