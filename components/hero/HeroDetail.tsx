@@ -19,7 +19,7 @@ export const HeroDetail: FC = () => {
           href="#contact"
           className="cursor-pointer rounded border-2 border-black bg-light px-6 py-3 font-semibold shadow-md transition-transform hover:-translate-y-1 dark:border-l dark:border-white dark:bg-darker"
           aria-label="Navegar a sección de contacto"
-          title="Navigate to contact section"
+          title="Ir a sección de contacto"
         >
           Contacto
         </NextLink>
