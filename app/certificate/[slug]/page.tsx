@@ -49,17 +49,7 @@ const CertificatePage = async ({ params }: { params: { slug: string } }) => {
   if (!data) {
     redirect("/");
   }
-  const {
-    courseHours,
-    courseWeeks,
-    dateFinished,
-    description,
-    image,
-    linkCurso,
-    name,
-    place,
-    url,
-  } = data;
+  const { dateFinished, description, image, name, place } = data;
 
   return (
     <main className="fade-in mx-auto mt-32 max-w-3xl px-4 sm:px-6 md:max-w-5xl">
@@ -73,7 +63,7 @@ const CertificatePage = async ({ params }: { params: { slug: string } }) => {
           width={600}
           height={600}
           data-aos="zoom-in"
-          className="shadow-xl"
+          className="shadow-2xl"
         />
       </picture>
       <h2 className="mb-3 text-center text-2xl font-bold md:text-3xl">
@@ -84,32 +74,7 @@ const CertificatePage = async ({ params }: { params: { slug: string } }) => {
         <p>Fecha obtención: {dateFinished}</p>
 
         <div className="flex flex-row items-center gap-2">
-          <NextLink
-            href={url}
-            target="_blank"
-            aria-label={`Navigate to course ${name}`}
-            className="flex flex-row items-center justify-center gap-1"
-          >
-            <p className="hover:underline">Url certificado</p>
-            <BiWorld
-              size={20}
-              className="cursor-pointer transition-transform hover:-translate-y-1"
-            />
-          </NextLink>
-        </div>
-        <div className="flex flex-row items-center gap-2">
-          <NextLink
-            href={linkCurso}
-            target="_blank"
-            aria-label={`Navigate to course ${name}`}
-            className="flex flex-row items-center justify-center gap-1"
-          >
-            <p className="hover:underline">Realizado en {place} </p>
-            <BiWorld
-              size={20}
-              className="cursor-pointer transition-transform hover:-translate-y-1"
-            />
-          </NextLink>
+          <p>Realizado en {place} </p>
         </div>
       </div>
       <p className="md:m-3 md:text-pretty">{description}</p>
